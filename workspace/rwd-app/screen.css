@@ -1,0 +1,195 @@
+/* CSS Document for Screens */
+
+
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,700,300);
+
+/* General */ 
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #555;
+    margin: 0px;
+    padding: 0px;
+}
+
+#page {
+    margin: 0 auto;
+    max-width: 1200px;
+    position: relative;
+}
+
+
+/* Text */ 
+/*N-top E - right S- bottom  W -left */
+h1 {   margin: 0 0 em 0 ; font-size: 3rem; font-weight: 700;}
+h2 {   margin: 0 0 .5em 0 ; font-size: 1.6rem; font-weight: 700; line-height: 1.1em;}
+h3 {   margin: 0 0 .5em 0 ; font-size: 1.3rem; font-weight: 700; line-height: 1.1em;}
+h4 {   margin: 0 0 .5em 0 ; font-size: 1rem; font-weight: 700;}
+
+p {margin: 0 0 1em 0 ; }
+
+a {color: #007eff;}
+a:visited {color:#65b1ff}
+
+
+/* btn tag */
+
+a.btn {
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 4px 15px;
+    transition: background-color 0.5s;
+}
+a.btn:hover {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+
+
+/* Header */ 
+
+header {
+    height: 430px;
+    background: #cf0004 url(./graphics/banner_1200.jpg) no-repeat center bottom;
+    position: relative;
+}
+
+header a.logo {
+    position: absolute;
+    top: 10px; left: 20px;
+    display: block;
+    width: 160px;
+    height: 60px;
+    background: url(./graphics//logo.svg) no-repeat 0 0;
+    background-size: contain;
+}
+
+header a.logo span {
+    display: none;
+}
+
+header div.hero {
+    position: absolute;
+    width: 42%;
+    top: 130px;
+    left: 55%;
+}
+header div.hero h1 {
+    line-height: 1em;
+    margin: 0 0 30px 0;
+    color: #fff;
+}
+
+
+/* Section - All */ 
+section {
+    padding: 0 30px;
+}
+
+section::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* Section - Main */ 
+
+
+section.main {  margin-top: 20px; margin-bottom: 30px;  padding: 0; }
+section.main aside { width: 33%;  float: left;  text-align: center; }
+section.main .content {
+    padding-top: 85px;
+    margin: 15px;
+    background: no-repeat center top;
+    background-size: 75px 75px;
+}
+
+section.main aside h3 a {color: #000; text-decoration-line: none;}
+section.main aside h3 a:hover {
+    text-decoration-line: underline;
+}
+
+section.main .content.trending { background-image: url(./graphics/icon_star.svg); }
+section.main .content.find-it { background-image: url(./graphics/icon_marker.svg); }
+section.main .content.tools { background-image: url(./graphics/icon_gear.svg); }
+
+ 
+/* Section - Atmosphere */ 
+
+
+section.atmosphere {
+    background-color: #cc6633;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #fff;
+}
+section.atmosphere article {
+    padding: 0 20px 0 510px;
+    background: url(./graphics/photo_lounge.jpg) no-repeat 0 5px;
+    min-height: 200px;
+}
+
+/* Section - How-To */ 
+
+section.how-to  { background-color: #eee9d9; position: relative;}
+section.how-to aside { width: 30%; float: left;margin-right: 10px; }
+section.how-to aside .content {  padding: 30px 30px 20px 5px; }
+section.how-to aside .content img {display: block; margin-bottom: 10px; width: 75%;}
+section.how-to aside .content h4 {margin-bottom: 0;}
+section.how-to aside .content p {margin-bottom: 0.5em;}
+section.how-to aside .content a {display: inline-block; color: #cc6633; font-weight: 700;}
+
+
+section.how-to blockquote {
+    color: #444;
+    background-color: #fff;
+    width: 33%;
+    margin: 0;
+    position: absolute;
+    right: 5%;
+    bottom: 0%;
+}
+section.how-to blockquote p {
+    margin: 30px 30px 20px 50px;
+}
+
+section.how-to blockquote p.quote {
+    font-style:italic;
+    font-size: 1.2em;
+}
+
+section.how-to blockquote p.credit {
+    color: #777;
+    font-size: .9em;
+    margin-top: 0;
+    padding-left: 25px;
+    line-height: 1.3em;
+    position: relative;
+}
+
+section.how-to blockquote::before {
+    content: '\201c';
+    color: orange;
+    position: absolute;
+    top: 10px;  left: 8px;
+    font-size: 5em;
+    font-family: serif;
+}
+
+section.how-to blockquote p.quote::after  {
+    content: '\201d';
+    font-family: serif;
+}
+
+section.how-to blockquote p.credit::before {
+    content: '\2014';
+    position: absolute;
+    top: -1px; left: 0px;
+}
+

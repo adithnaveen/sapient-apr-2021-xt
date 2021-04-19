@@ -1,0 +1,185 @@
+aishwarya - SRM chn - Btech - CS - plays guitar, into fitness 
+Akhilesh - CS PES blr- travelling, gym 
+Gautam - CS VIT - gaming, basket ball, gym 
+Rishab - SRM - IT - guitar, 
+Rekkala Hinduja - BTech - Cooking, instagram 
+priyanka- E&C - dancing 
+Harsh - SRM - CS - Football, GYM, PC Games 
+Manish - CSC - SRM - Cooking 
+Vikas - CS, Birla institute - Gamin and Cricket 
+Ayush - Btech - SRM - Cycling & Listening to Music 
+Navdeep - Btech - CS - Thapar- was intern with Samsung - reading booking, cricket 
+
+
+
+XT 101 & XT 102 (14 + 12) 
+
+1. Web Programming 
+2. HTML 5 
+3. CSS (Media Query)
+4. JavaScript 
+5. Ajax 
+6. Advance JavaScript 
+7. Design Pattern 
+8. jQuery 
+9. ES6, TypeScript 
+10. NodeJS
+11. TDD Programming 
+
+11 Days React + DevOps + Cloud (AWS)
+
+
+
+12 Pax / 4 = 3 
+
+
+
+VS Code 
+NodeJS 
+WinWord
+Excel 
+
+
+USA - Philelphia 
+
+{
+	empid:101, 
+	empname:"Ayush", 
+	empsal:1234, 
+	address: {
+		hno:123, 
+		street:"Some Blvd", 
+		city:"some city"
+	}
+}
+
+1999-2003 
+<empid>101</empid>
+<empname>Ayush</empname>
+<empsal>1234</empsal>
+<address>
+	<hno>123</hno>
+	<street>Some Blvd</street>
+	<city>Some City</city>
+</address>
+
+
+
+<input type="text"/>  - Text 
+<input type="email"/> - Email 
+<input type="search"/> - search 
+<input type="url"/> - url 
+
+
+NodeJS 
+Tomcat
+WebLogic 
+WebSphere
+Apache 
+Netty 
+Jetty 
+Python 
+
+
+file:///Volumes/Kanchan/MyTrainings/sapient/freshers-2021-apr-xd/workspace/html-css-works/html/D1-Ex1.html
+
+
+
+.heading {}
+.table-heading {
+}
+ 
+#my-custom-table {}
+
+
+html
+	 <input type="text" id="myid" /> 
+	<div>
+		 <input type="text" class="myclass" /> 
+	</div>
+	 <input type="text" class="myclass" /> 
+css 
+#myid {
+}
+
+div.myclass {
+	text-align:center;
+}
+.myclass {
+	color:blue; 
+}
+
+
+
+
+
+
+Sapient 
+Microsoft 
+Google
+Facebook 
+
+[sapinet content]
+
+
+[Microsoft content]
+
+
+[Google content]
+
+
+[Facebook content]
+
+
+
+https://www.w3schools.com/charsets/ref_utf_symbols.asp
+
+
+google search console 
+lighthouse 
+wave 
+
+
+100%
+1. Good Eye Sight 
+2. Dont Have Good Eye Sight (No) - 20% 
+3. 5%-7% of the people cannot see 
+
+
+https://webaim.org/standards/508/checklist
+
+
+
+<button aria-label="Going to" data-stid="location-field-destination-menu-trigger" type="button" class="uitk-faux-input"></button>
+
+<input data-stid="location-field-leg1-origin-menu-input" id="location-field-leg1-origin" autocapitalize="off" autocomplete="off" autocorrect="off" type="text" spellcheck="false" class="uitk-field-input uitk-typeahead-input   " placeholder="Where are you leaving from?" aria-required="false" aria-invalid="false" value="">
+
+
+References 
+------------------------------------
+https://www.w3.org/WAI/perspective-videos/
+
+Web Accessability (A, AA, AAA ) Standards 
+https://usability.yale.edu/web-accessibility/articles/wcag2-checklist
+
+508 checklist 
+https://webaim.org/standards/508/checklist
+
+
+
+Level 1 A - <img src="" alt="" /> 
+Level 2 AA
+Level 3 AAA
+
+ 
+https://www.slideshare.net/rachelcarden/understanding-and-supporting-web-accessibility
+
+
+ 
+
+
+
+
+
+
+

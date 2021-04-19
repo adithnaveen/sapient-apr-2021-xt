@@ -1,0 +1,34 @@
+Given - PreCondition 
+When - Condition 
+Then - Post Condition 
+
+And - Multiple Conditio 
+But - else 
+
+TDD - Test Driven Development 
+BDD - Behavioural Driven Development 
+DDD - Domain Driven Development 
+MDD - Model Driven Development 
+
+
+User Story 1: Develop the home page for the application (TMS)  
+User Story 2: To register/Sign Up Client or super admin of the company to be signed up 
+User Story 3: To register/Sign Up Trainer 
+User Story 4: To Login/Sign in as Client 
+
+
+Responsive Web Design 
+Adaptive Web Design 
+
+
+body{}
+
+
+custom-header{}
+sample-box{}
+
+
+
+
+
+

@@ -1,0 +1,218 @@
+1. Create Repos (checked)
+1.1 install git (https://git-scm.com/downloads)
+2. working with git / BitBucket 
+3. BitBucket + Jira + Confluence / GitHub 
+	Bash - Git (local)
+SCM
+	CVS, SVS, VSS etc 
+	
+1. 
+> git init (current folder will become git folder )
+> git init some-folder 
+
+2. 
+git clone https://tools.publicis.sapient.com/bitbucket/scm/psixt/<name>.git
+
+3. git config user.name naveen
+4. git config user.email llid@ps.com
+
+> git log -n <limit> --oneline 
+> git log --grep='first' --oneline
+
+
+git init 
+git add . (all files)
+git add <filename> (specific)
+git commit -m "comment "
+
+
+git branch <branchName>
+git checkout <branchName>
+
+to merge 
+git checkout master
+git merge branchName
+
+
+1. clone the repo 
+2. seed all the work which is done by you to bitbucket 
+3. create 2 branch from terminal 
+
+
+to set user name 
+git config --global user.name <name>
+to set email 
+git config --global user.email <email>
+
+to edit manually in the file 
+git config --global --edit 
+
+
+
+
+
+
+
+master
+	feature/one - gautam 
+		loginscreen
+	feature/two - navdeep 
+		regscreen 
+
+block to merge to master  (2+1 PR)
+
+master 
+	
+
+patterns 
+
+* -> 0 or more 
++ -> 1 or more 
+? -> 0 or 1 
+. -> single char occrance 
+\d -> integer 
+\s -> string 
+{4,7} - between 4 to 7 chars 
+[a-z] - all lower cases 
+[A-Z] - all upper cases 
+[0-9] - all numbers between 0-9 
+[a-z0-9] - all lower cases + 0-9 number, 1 occurance 
+[a-z0-9+] - all lower cases + 0-9 number, 1 or more occurance 
+^$ - ^ start / $ to end 
+
+zip 
+[0-9]{6}
+
+0-255
+
+[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}
+
+
+
+
+
+http://127.0.0.1:5500/html-css-works/html/D2-Ex4.html?text1=kumar&text2=kumar&usrNumber=2&usrColor=%233c8b50
+
+
+
+https://www.w3schools.com/tags/tag_input.asp
+
+
+
+
+
+
+Vendor 1 
+	TOC - Day wise plan 
+	Trainers - Profile/s
+		ReactJS - INR X  (per day / per hr)
+		Java - INR Y 
+		C/C++ - INR Z 
+		Salesforce - INR XY
+Vendor 2 
+	TOC - Day wise plan 
+	Trainers - Profile/s
+Vendor 3 
+	TOC - Day wise plan 
+	Trainers - Profile/s
+
+ReactJS 
+	TOC - Day wise plan 
+	Trainers - Profile 
+	Commercial 
+	Time 
+
+
+Call 
+
+
+
+
+
+
+
+Trainer - Naveen 
+
+Company 
+	Raja - super admin (costing/budgeting / calendar)
+		Swati (User)
+		Sangeeta (User)
+		Alok (User)
+		Nikita  (User)
+
+
+
+{
+  "title": "The title of your course",
+  "description": "Brief Description of the course",
+  "prerequisite": "Prerequisite for the course",
+  "outcome": "Outcome of the course",
+  "target": "Target audience of the course",
+  "duration": 10,
+  "outline": [
+    {
+      "topicName": "topic name",
+      "subTopics": [
+        {
+          "subTopic": "subtopic name"
+        }
+      ]
+    }
+  ]
+}
+
+
+
+
+
+{
+  "entityId": "sapient-blr",
+  "fullname": "Naveen",
+  "email": "naveen@ps.com",
+  "password": "secret@123",
+  "pic": "Profile picture of the user"
+   
+}
+
+{
+  "message": "User signup successfully",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDc2YjRkZTU0MTJiNDAwMTc3NGQzM2IiLCJpYXQiOjE2MTgzOTIyODYsImV4cCI6MTYxODQwMzA4Nn0.tBzobZdmr8uk7hgE-ohsialVD7gSlND0TXXq8PpaHEw"
+}
+
+
+Teams & SME 
+Team of size 3 
+
+
+
+Team 1 (project-01)
+	Aishwarya 
+	Harsh
+	Ayush 
+Team 2 (project-02)
+	Navdeep 
+	Priyanka 
+	Manish 
+Team 3 (project-03)
+	Vikash 
+	Rishab 
+	Hinduja 
+Team 4 (project-04)
+	Deepesh 
+	Gautam 
+	Akhilesh 
+
+Sprint 1 & 2
+
+
+
+
+
+
+
+
+
+
+
+
+

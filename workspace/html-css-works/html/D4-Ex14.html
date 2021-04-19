@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+
+        h1 {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h2 {
+            font-family: 'Hachi Maru Pop', cursive;
+        }
+
+        @font-face {
+            font-family: "Custom Font";
+            src: url(../fonts/googlefont1.woff2);
+        }
+
+        .myh1 {
+            font-family: Custom Font;
+            font-size: 40pt;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: scale(0.5);
+            }
+
+            50% {
+                transform: translateX(100px) translateY(100px) rotate(90deg) scale(1);
+            }
+
+            100% {
+                transform: scale(0.5);
+            }
+        }
+
+        @keyframes dance {
+            0% {
+                transform: translateX(30px) translateY(30px) rotate(0deg);
+            }
+
+            33% {
+                transform: translateX(-30px) translateY(-30px) rotate(45deg);
+                opacity: 50%;
+            }
+
+            66% {
+                transform: translateX(0px) rotate(-45deg);
+                opacity: 50%;
+            }
+
+            100% {
+                transform: translateX(0px) rotate(0deg);
+            }
+        }
+
+        #img1 {
+            animation: spin 3s 1 ease-in-out;
+        }
+
+        #cake:hover {
+            animation: dance 1s infinite ease-in-out;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>First H1 Tag</h1>
+    <h2>First H2 Tag here</h2>
+
+    <h1 class="myh1">new H1 Tag Goes Here</h1>
+
+    <hr>
+    <img src="../images/tampa.jpg" alt="tampa" id="img1">
+    <img src="../images/cake.jpg" alt="cake" id="cake">
+</body>
+
+</html>

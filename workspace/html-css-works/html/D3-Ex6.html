@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div#videos>video {
+            height: 200px;
+        }
+    </style>
+
+    <script>
+        function init() {
+            var videos = document.querySelectorAll("div#videos>video")
+
+            videos.forEach(function (v) {
+                v.onmouseenter = function () {
+                    v.play()
+                }
+                v.onmouseout = function () {
+                    v.pause()
+                }
+            })
+        }
+        window.onload = init;
+    </script>
+
+</head>
+
+<body>
+    <h1>HTML 5 Video Demo</h1>
+
+    <img src="../images/tampa.jpg" alt="Tampa Image" id="tampa">
+    <button id="btnFS">FullScreen</button>
+
+    <script type="text/javascript">
+        // img1 = document.getElementById("tampa")
+        img1 = document.querySelector("#tampa");
+        btn1 = document.getElementById("btnFS");
+
+        btn1.onclick = function () {
+            if (img1.webkitRequestFullScreen) {
+                img1.webkitRequestFullScreen() // IE or safari 
+            } else if (img1.mozRequestFullScreen) {
+                img1.mozRequestFullScreen() // firefox 
+            } else if (img1.requestFullScreen) {
+                img1.requestFullScreen()  // other browsers 
+            }
+        }
+
+    </script>
+
+
+    <hr>
+
+    <div id="videos">
+        <video src="../videos/baby-and-dog.mp4" type="video/mp4">
+            <track label="English Subtitles" kind="subtitles" srclang="en" src="">
+            </track>
+            <h3>Video is not supported by your browser</h3>
+        </video>
+
+        <video src="../videos/billy.mp4" type="video/mp4">
+            <track label="English Subtitles" kind="subtitles" srclang="en" src="">
+            </track>
+            <h3>Video is not supported by your browser</h3>
+        </video>
+        <video src="../videos/burningtruck.mp4" type="video/mp4">
+            <track label="English Subtitles" kind="subtitles" srclang="en" src="">
+            </track>
+            <h3>Video is not supported by your browser</h3>
+        </video>
+    </div>
+
+
+
+</body>
+
+</html>

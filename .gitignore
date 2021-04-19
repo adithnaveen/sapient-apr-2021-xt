@@ -1,0 +1,8 @@
+documents
+/**/node_modules/
+
+*.zip
+*.rar
+*.class
+
+

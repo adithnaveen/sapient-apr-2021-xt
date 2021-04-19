@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1:hover {
+            color: aliceblue;
+            background-color: rgb(130, 130, 214);
+            font-size: 50pt;
+        }
+
+        h1 {
+            color: black;
+            background-color: antiquewhite;
+            transition: all 500ms ease-in-out;
+        }
+
+        #img2 {
+            transform: scale(1.5);
+        }
+
+        #img1:hover {
+            transform: scale(1.3);
+            transition: all 1s ease-in-out;
+        }
+
+        #img3 {
+            transform: scale(.3);
+        }
+
+        #img3:hover {
+            transform: scale(.5);
+            transition: all 1s ease-in-out;
+        }
+
+        #img4:hover {
+            transform: rotateX(45deg) rotateY(45deg) scale(1.5);
+            transition: all 1s ease-in-out;
+        }
+
+        #img5:hover {
+            transform: translateX(50px) translateY(50px) scale(.5);
+            transition: all 1s ease-in-out;
+            opacity: .2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hover on top of me</h1>
+    <br><br>
+
+    <img src="../images/tampa.jpg" alt="tampa" id="img1">
+    <img src="../images/tampa.jpg" alt="tampa" id="img2">
+    <img src="../images/tampa.jpg" alt="tampa" id="img3">
+    <img src="../images/tampa.jpg" alt="tampa" id="img4">
+    <img src="../images/tampa.jpg" alt="tampa" id="img5">
+</body>
+
+</html>

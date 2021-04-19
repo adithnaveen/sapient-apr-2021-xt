@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .url1:invalid {
+            background-color: rgb(221, 165, 165);
+        }
+
+        .url1:valid {
+            background-color: rgb(133, 209, 173);
+        }
+
+        /* form>.url:invalid {
+            background-color: rgb(106, 125, 211);
+        } */
+
+        form div .url {
+            background-color: aqua;
+        }
+
+        form div .url:invalid {
+            background-color: rgb(159, 63, 184);
+        }
+
+        form div .url:valid {
+            background-color: rgb(26, 230, 43);
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="" class="myform" aria-label="Contact information">
+        <div>
+            <label for="salary">Salary</label>
+            <input type="number" name="salary" id="">
+        </div>
+        <div>
+            <label for="salary">Salary</label>
+            <input type="number" name="salary" min="2" max="20" step="5" id="">
+        </div>
+        <div>
+            <label for="salary">Salary</label>
+            <input type="number" name="salary" value="5" min="2" max="20" step="5" id="">
+        </div>
+        <div>
+            <label for="salary">Salary</label>
+            <input type="number" name="salary" value="5" min="0.0" max="14.5" step="0.2" id="">
+        </div>
+
+        <hr>
+
+        <div>
+            <label for="range1">Range</label>
+            <input type="range" name="range1" id="">
+        </div>
+
+        <div>
+            <label for="range1">Range</label>
+            <input type="range" name="range1" value="20" id="">
+        </div>
+
+        <div>
+            <label for="range1">Range</label>
+            <input type="range" name="range1" value="20" min="0" max="120" step="20" id="">
+        </div>
+
+        <div>
+            <label for="range1">Range</label>
+            <input type="range" name="range1" value="0.5" min="10.5" max="50" step="15" id="">
+        </div>
+        <div>
+            <label for="url">URL</label>
+            <input type="url" class="url" name="compurl">
+        </div>
+
+        <!-- data list -->
+
+        <div>
+            <label for="places">Places Around You</label>
+            <input type="text" name="places" list="suggesstions">
+            <datalist id="suggesstions">
+                <option value="Bengaluru">Bengaluru</option>
+                <option value="Summer Palace">Summer Palace</option>
+                <option value="Bangalore Palace">Bangalore Palace</option>
+                <option value="Some ritual places">Some ritual places</option>
+                <option value="City Gokart">City Gokart</option>
+            </datalist>
+        </div>
+
+        <div>
+            <p>Current System Usage
+                <meter value="20.0" min="0" max="100"></meter> 300MB of 1GB
+            </p>
+
+            <p>Current System Usage
+                <meter value="40" min="0.0" max="100"></meter>
+            </p>
+        </div>
+
+        <div>
+            <progress value="30" max="100">50%</progress>
+        </div>
+
+    </form>
+    <div>
+        <label for="url">URL</label>
+        <input type="url" class="url1" name="compurl">
+    </div>
+
+    <hr>
+
+    <input type="text" name="" placeholder="enter here" aria-placeholder="Enter your age" id="">
+    </div>
+
+    <div role="group" aria-labelledby="group-labels">
+        <ul class="checkboxes">
+            <li>
+                <div role="checkbox" aria-checked="false" tabindex="0">
+                    Data1
+                </div>
+            </li>
+            <li>
+                <div role="checkbox" aria-checked="true" tabindex="0">
+                    Data2
+                </div>
+            </li>
+            <li>
+                <div role="checkbox" aria-checked="false" tabindex="0">
+                    Data3
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

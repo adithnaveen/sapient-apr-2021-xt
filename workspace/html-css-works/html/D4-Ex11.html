@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1:first-child {
+            font-size: 70pt;
+            text-align: center;
+            font-weight: bold;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-image: url(../images/tampa.jpg);
+            color: transparent;
+            -webkit-text-stroke-color: blue;
+            -webkit-text-stroke-width: 3px;
+            -webkit-background-clip: text;
+        }
+
+
+        h1:not(h1:first-child) {
+            font-size: 30pt;
+            text-align: left;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            color: brown;
+        }
+
+        .mydiv {
+            column-count: 4;
+            column-rule: 2px solid black;
+            column-gap: 60px;
+            text-align: justify;
+            padding: 50px;
+        }
+
+        #list1 {
+            width: 250px;
+        }
+
+        #list1 li {
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+            /* border-top: 1px solid black; */
+            padding: 10px;
+            list-style: none;
+            margin: 0px;
+        }
+
+        #list1 li:first-child {
+            /* N - top E - right S - bottom  W - left  */
+            border-radius: 10px 10px 0 0;
+            border-top: 3px solid black;
+        }
+
+        #list1 li:last-child {
+            /* N - top E - right S - bottom  W - left  */
+            border-radius: 0 0 10px 10px;
+            border-bottom: 3px solid black;
+        }
+
+        #list1 li:hover {
+            background-color: rgba(125, 200, 30, .8) !important;
+        }
+
+        #list1 li:nth-child(even) {
+            background-color: rgba(213, 221, 204, 0.8);
+        }
+
+        .active {
+            background-color: rgba(88, 116, 207, 0.8);
+            color: aliceblue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS DEMO</h1>
+    <h1>This is another H1</h1>
+
+
+    <div class="mydiv">
+        <p>
+            Microsoft Corporation is an American multinational technology company with headquarters in Redmond,
+            Washington. It develops, manufactures, licenses, supports, and sells computer software, consumer
+            electronics, personal computers, and related services. Its best known software products are the Microsoft
+            Windows line of operating systems, the Microsoft Office suite, and the Internet Explorer and Edge web
+            browsers. Its flagship hardware products are the Xbox video game consoles and the Microsoft Surface lineup
+            of touchscreen personal computers. Microsoft ranked No. 21 in the 2020 Fortune 500 rankings of the largest
+            United States corporations by total revenue;[3] it was the world's largest software maker by revenue as of
+            2016.[4] It is considered one of the Big Five companies in the U.S. information technology industry, along
+            with Google, Apple, Amazon, and Facebook.
+        </p>
+        <p>
+            Microsoft Corporation is an American multinational technology company with headquarters in Redmond,
+            Washington. It develops, manufactures, licenses, supports, and sells computer software, consumer
+            electronics, personal computers, and related services. Its best known software products are the Microsoft
+            Windows line of operating systems, the Microsoft Office suite, and the Internet Explorer and Edge web
+            browsers. Its flagship hardware products are the Xbox video game consoles and the Microsoft Surface lineup
+            of touchscreen personal computers. Microsoft ranked No. 21 in the 2020 Fortune 500 rankings of the largest
+            United States corporations by total revenue;[3] it was the world's largest software maker by revenue as of
+            2016.[4] It is considered one of the Big Five companies in the U.S. information technology industry, along
+            with Google, Apple, Amazon, and Facebook.
+        </p>
+        <p>
+            Microsoft Corporation is an American multinational technology company with headquarters in Redmond,
+            Washington. It develops, manufactures, licenses, supports, and sells computer software, consumer
+            electronics, personal computers, and related services. Its best known software products are the Microsoft
+            Windows line of operating systems, the Microsoft Office suite, and the Internet Explorer and Edge web
+            browsers. Its flagship hardware products are the Xbox video game consoles and the Microsoft Surface lineup
+            of touchscreen personal computers. Microsoft ranked No. 21 in the 2020 Fortune 500 rankings of the largest
+            United States corporations by total revenue;[3] it was the world's largest software maker by revenue as of
+            2016.[4] It is considered one of the Big Five companies in the U.S. information technology industry, along
+            with Google, Apple, Amazon, and Facebook.
+        </p>
+    </div>
+
+    <hr>
+    <ul id="list1">
+        <li>List Index 1</li>
+        <li>List Index 2</li>
+        <li>List Index 3</li>
+        <li>List Index 4</li>
+        <li class="active">List Index 5</li>
+        <li>List Index 6</li>
+        <li>List Index 7</li>
+    </ul>
+
+</body>
+
+</html>

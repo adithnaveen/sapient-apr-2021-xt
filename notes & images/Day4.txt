@@ -1,0 +1,53 @@
+negation psedoclasses 
+working fonts 
+word wrapping 
+opacity 
+
+
+
+User Story 1: Develop the home page for the application (TMS)  
+
+Ac1 
+qAc3 
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,300&display=swap');
+</style>
+
+font-family: 'Roboto', sans-serif;
+
+font-family: 'Hachi Maru Pop', cursive;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
