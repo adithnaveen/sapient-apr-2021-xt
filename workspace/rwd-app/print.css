@@ -3,5 +3,39 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,700,300);
 
 
+#page { margin: .5cm;}
 
+body{
+    color: rgb(54, 53, 53);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
 
+h1, h2, h3, h4 {
+    margin: 0;
+    font-family:  "Open Sans" sans-serif;
+    font-weight: 700;
+}
+
+h1 {font-size: 1.5em;}
+h2 {font-size: 1.3em;}
+h3 {font-size: 1.2em;}
+h4 {font-size: 1.1em;}
+
+p{font-size: 0.9em; margin: 0 0 1em 0;}
+
+a, a:visited {text-decoration: none; color: inherit;}
+a::after, a:visited::after {
+    content: '(' attr(href) ')';
+    font-style: italic;
+    word-wrap: break-word;
+}
+
+nav {display: none;}
+
+/*Section */ 
+
+header {position: relative;}

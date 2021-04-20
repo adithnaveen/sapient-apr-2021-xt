@@ -60,6 +60,7 @@ header {
 }
 
 header a.logo {
+    z-index: 1;
     position: absolute;
     top: 10px; left: 20px;
     display: block;
@@ -193,3 +194,166 @@ section.how-to blockquote p.credit::before {
     top: -1px; left: 0px;
 }
 
+/* Navigation */ 
+
+nav {
+    background-color: rgba(0, 0, 0, .70);
+    position: absolute;
+    top: 0px; left: 0px;
+    padding: 50px 0 0 0;
+    width: 100%;
+}
+
+nav::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+nav ul { list-style: none; margin: 0; padding: 0;}
+nav ul li:hover {background-color: #3a0508;}
+nav ul li:hover > ul  {  display: block; }
+
+nav ul li a {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px;
+    width: 125px;
+    position: relative;
+    text-decoration: none;
+}
+
+nav ul li a:hover { background-color: #6d0911; }
+nav ul li a:visited{background-color: rgb(119, 63, 63);}
+
+
+nav ul ul {
+    position: absolute;
+    top: 100%;
+    background-color: #3b0409;
+    display: none;
+}
+
+nav ul ul ul { left: 100%; top: 0px;}
+
+nav ul ul li {position: relative;}
+
+/* Nav Top Level Elements */ 
+nav > ul {padding-left: 200px;}
+nav > ul > li {float: left;}
+
+nav > ul > li > a {
+    width: auto;
+    padding: 15px 20px 30px 20px;
+}
+
+/* Adding Indication Arrows */
+
+nav > ul > li >  a[aria-haspopup="true"]::after {
+    content: '';
+    display: block;
+    top: 35px; right: 15px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 6px solid transparent;
+    border-top: 4px solid #fff;
+    border-right: 4px solid transparent;
+}
+
+ /* 
+nav > ul > li > li >  a [aria-haspopup="true"]::after {
+    
+    top: auto;
+    left: 20px;
+    right: auto;
+    bottom: 10px;
+    border-left: 6px solid #fff;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}*/ 
+
+
+
+
+/* Footer */
+footer { font-size: 0.8em; margin: 40px; color: rgb(44, 43, 43); }
+footer .content { display: inline; }
+footer a { margin-left: 30px; color: rgb(44, 65, 158); }
+footer a:hover { color: #000; }
+footer a:visited { color: #cf0004;}
+
+
+
+/* Media Queries */ 
+
+@media screen and (max-width:1000px) {
+    h1 {font-size: 2.2rem;}
+
+    /*Header*/ 
+    header div.hero {left: 57%;}
+    header div.hero h1 {margin-bottom: 20px;}
+
+    /* Atmosphere */ 
+    section.atmosphere article {
+        padding-left: 400px;
+        background-size: 380px auto;
+    }
+}
+
+@media screen and (max-width:825px) {
+    h1 {font-size: 2.1rem;}
+
+    /* Header */
+    header {
+        height: 300px;
+        background-image: url(./graphics/banner_825.jpg);
+    }
+    header div.hero  {left: 48%;top: 120px;}
+    
+    /* Atmosphere */ 
+    section.atmosphere article {
+        padding-left: 325px;
+        background-size: 300px auto;
+    }
+
+    /* How-To */ 
+    section.how-to blockquote p.quote {
+        font-size: 1em; line-height: 1.1em;
+    }
+    section.how-to blockquote p.credit { font-size: 0.7em;}
+    section.how-to blockquote {font-size: 0.7em;}
+}
+
+@media screen and (max-width:760px) {
+    h1 {font-size: 1.5rem;}
+    h2 {font-size: 1.4rem;}
+    h3 {font-size: 1.1rem;}
+
+    a.btn {font-size: 1em;}
+
+    /*Header */ 
+    header a.logo {width: 145px; height: 60px;}
+    header div.hero {top: 150px; left: 40px;left:48%}
+    
+    /*section */ 
+    section.main {margin-top: 10px; margin-bottom: 10px;}
+    section.main aside div.content {background-size: 55px 60px; 
+    padding-top: 60px;}
+
+    /* how-to section */ 
+    section.how-to aside div.content img {width: 80%;}
+
+    /* Navigation */ 
+    nav {padding-top: 80px;}
+    nav > ul {padding-left: 10px;}
+} 
+
+
+@media screen and (max-width:625px) {
+    /* refractor
+        menu to be moved bottom or top it should single column 
+    */
+}
+
+@media screen and (max-width:425px) {}

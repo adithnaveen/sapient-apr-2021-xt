@@ -5,7 +5,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Creating a Responsive Web Design</title>
-	<link rel="stylesheet" href="./screen.css">
+	<!-- <link rel="stylesheet" media="screen" href="./screen.css"> -->
+	<link rel="stylesheet" href="./print.css">
 </head>
 
 <body>
@@ -15,7 +16,9 @@
 			<a href="#" class="logo" title="Everyday Things"><span>Everyday Things</span></a>
 			<div class="hero">
 				<h1>Add Interest With Natural Textures</h1>
-				<a href="#" title="Get Advice From Top Designers" class="btn">Get Advice From Top Designers</a>
+				<a href="http://localhost/somesite" title="Get Advice From Top Designers" class="btn">Get Advice
+					<span>From Top
+						Designers</span></a>
 			</div>
 		</header>
 
@@ -23,7 +26,7 @@
 		<section class="main">
 			<aside>
 				<div class="content trending">
-					<h3><a href="#">What&apos;s trending</a></h3>
+					<h3><a href="http://yahoo.com">What&apos;s trending</a></h3>
 					<p>Lorem ipsum dolor sit amet, consect etuer adipiscing elit. <a href="http://mysite.com">Morbi
 							commodo</a>, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem
 						non turpis.</p>
@@ -56,6 +59,7 @@
 			</article>
 		</section>
 
+
 		<section class="how-to">
 			<aside>
 				<div class="content">
@@ -87,7 +91,7 @@
 		<nav>
 			<ul>
 				<li>
-					<a href="#" title="About Us">About Us</a>
+					<a href="#" aria-haspopup="true" title="About Us">About Us</a>
 					<ul>
 						<li>
 							<a href="#" title="Sub Link 1">Sub Link 1</a>
@@ -97,8 +101,9 @@
 						</li>
 					</ul>
 				</li>
+				<!-- nav > ul > li  -->
 				<li>
-					<a href="#" title="Design Corner">Design Corner</a>
+					<a href="#" aria-haspopup="true" title="Design Corner">Design Corner</a>
 					<ul>
 						<li>
 							<a href="#" title="Sub Link 1">Sub Link 1</a>
@@ -107,7 +112,7 @@
 							<a href="#" title="Sub Link 2">Sub Link 2</a>
 						</li>
 						<li>
-							<a href="#" title="Sub Link 3">Sub Link 3</a>
+							<a href="#" class="test-class" aria-haspopup="true" title="Sub Link 3">Sub Link 3</a>
 							<ul>
 								<li>
 									<a href="#" title="Sub-Sub Link 1">Sub-Sub Link 1</a>
@@ -121,7 +126,7 @@
 
 				</li>
 				<li>
-					<a href="#" title="Products">Products</a>
+					<a href="#" aria-haspopup="true" title="Products">Products</a>
 					<ul>
 						<li>
 							<a href="#" title="Sub Link 1">Sub Link 1</a>
@@ -132,7 +137,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#" title="Abour Us">About Us</a>
+					<a href="#" aria-haspopup="true" title="Contact Us">Contact Us</a>
 				</li>
 			</ul>
 		</nav>
