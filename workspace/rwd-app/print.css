@@ -39,3 +39,106 @@ nav {display: none;}
 /*Section */ 
 
 header {position: relative;}
+header::after {
+    content: url(./graphics/banner_1300_print.jpg);
+}
+
+header a.logo {
+    display: block;
+    width: 150px; height: 60px;
+    top: 20px;
+    left: 20px;
+    position: absolute;
+}
+header a.logo::before {
+    content: url(./graphics/logo_print.svg);
+}
+header a.logo::after {
+    display: block;
+    position: absolute;
+    top: 20px;
+}
+
+header a.logo span {display: none;}
+header div.hero {
+    width: 75%;
+    top: 110px; left: 20px;
+    position: absolute;
+}
+header div.hero a::after {display: block;}
+
+section {margin-bottom: 50px;}
+section::after {content: ''; display: block; clear: both;}
+/* Main */ 
+section.main {margin-top: 20px; margin-bottom: 20px;}
+section.main aside {width: 33%; float: left; text-align: center;}
+section.main aside div.content a::after {display: block; font-weight: normal;}
+section.main aside div.content {margin: 15px;}
+
+section.main aside div.content.trending::before {content: url(./graphics/icon_star_print.svg);}
+section.main aside div.content.find-it::before {content: url(./graphics/icon_marker_print.svg);}
+section.main aside div.content.tools::before {content: url(./graphics/icon_gear_print.svg);}
+
+/* Atmosphere */ 
+section.atmosphere {
+    position: relative;
+    margin-bottom: 40px;
+    padding-top: 50px;
+    border-top: 1px solid #ccc;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+section.atmosphere::before{content: url(./graphics/photo_lounge_print.jpg);}
+section.atmosphere article {width: 60%; left: 475px; position: absolute; top: 50px;}
+
+
+/* How-To Section*/ 
+
+section.how-to {padding-top: 40px; page-break-inside: avoid; }
+section.how-to aside {width: 25%; float: left; margin: 0 35px 0 0;}
+section.how-to div.content img {display:  none;}
+
+section.how-to aside:nth-child(1) div.content::before{
+    content: url(./graphics/photo_seating_print.jpg);}
+
+section.how-to aside:nth-child(2) div.content::before{
+    content: url(./graphics/photo_lighting_print.jpg);}
+
+section.how-to blockquote {
+    width: 30%;
+    float: left;
+    margin-left: 30px;
+    position: relative;
+}
+
+section.how-to blockquote::before {
+    content: '\201c';
+    color: #ccc;
+    font-size: 5em;
+    font-family: serif;
+    display: inline-block;
+    position: absolute;
+    top: -35px; left: -40px;
+}
+section.how-to blockquote p.quote {
+    font-style: italic;
+    font-size: 1.2em;
+    color: rgb(27, 19, 19);
+}
+section.how-to blockquote p.quote::after {
+    content: '\201d'; font-family: serif;
+}
+
+section.how-to blockquote p.credit {
+    padding-left: 30px;
+    position: relative;
+}
+section.how-to blockquote p.credit::before {
+    content: '\2014';
+    position: absolute;
+    left: -5px;
+    top: -5px;
+}
+
+/* Footer */ 
