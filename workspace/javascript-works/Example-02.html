@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fnObj() {
+            var obj = new Object;
+            obj.a = 100;
+            obj.b = 200;
+            console.log(obj);
+            console.log(obj.a);
+            console.log(obj.b);
+            console.log(obj.c);
+        }
+
+        function Person(name, pid) {
+            this.name = name;
+            this.pid = pid;
+            // private function 
+            var fnPrivate = function () {
+                console.log("This is my private function ");
+            }
+
+            // previllged functions 
+            this.fnAccPrivate = function () {
+                console.log("i'm in privelleged function ");
+                fnPrivate();
+            }
+        }
+        // the prototype function is public 
+        // you cannot access private functions in 
+        // the class which are defined as var 
+        Person.prototype.display = function () {
+            console.log("Name " + this.name);
+            console.log("Pid " + this.pid);
+            // fnPrivate();
+        }
+
+
+        function fnArray() {
+            arr = new Array(5)
+
+            arr[0] = 10;
+            arr[1] = 20;
+            arr[2] = 30;
+            arr[3] = "Hello";
+            arr[4] = true;
+
+            arr1 = new Array()
+            arr1[0] = "Ayush"
+            arr1[1] = "Deepesh"
+            arr1[2] = "Navdeep"
+
+            console.log(arr);
+            console.log(arr.length);
+            console.log(arr[0]);
+
+            arr.push(100, 200, 300)
+            console.log(arr);
+            arr.unshift("Thursday", "Hi")
+            console.log(arr);
+            arr.pop()
+            arr.pop()
+            arr.pop()
+            console.log(arr);
+            arr.shift()
+            arr.shift()
+            console.log(arr);
+            arr.splice(2, 1, "Testing", "Again", arr1)
+            console.log(arr);
+
+            // get values of nested array in upper case 
+            for (val in arr[4]) {
+                console.log(arr1[val].toUpperCase() + " " + arr1[val].charAt(0));
+            }
+        }
+
+        function fnCheckAccCheckNames() {
+            arr = [10, 20, 30, 40];
+            console.log(arr);
+            num = parseInt(prompt("Enter number to find"))
+            console.log(arr.filter(v => v === num));
+            console.log(arr.filter(v => v === num).length > 0
+                ? "Found" : "Not Found ");
+
+        }
+    </script>
+</head>
+
+
+<body>
+    <button onclick="fnObj()">Call Obj</button>
+
+    <script>
+        function callme() {
+            per = new Person("Gautam", 101)
+            console.log(per.name);
+            console.log(per.pid);
+
+            per.display();
+            per.fnAccPrivate();
+        }
+    </script>
+
+    <button onclick="fnArray()">Call Array</button>
+    <button onclick="fnCheckAccCheckNames()">Click Me</button>
+</body>
+
+</html>
