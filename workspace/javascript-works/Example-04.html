@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function fnAddRemoveElement() {
+            let __epara = document.body.getElementsByTagName('p')[0]
+
+            // <b></b> 
+            let __newNode = document.createElement('b');
+            // -> Hello How are you
+            let __textContent = document.createTextNode("Hello How are you");
+
+            // <b>Hello How are you</b> 
+            __newNode.appendChild(__textContent);
+            console.log(__newNode);
+
+            // document.body.replaceChild(__newNode, __epara)
+            // document.body.insertBefore(__newNode, __epara)
+            __epara.append(__newNode)
+
+        }
+    </script>
+</head>
+
+<body>
+    <p>This is mypara</p>
+
+    <button onclick="fnAddRemoveElement()">fnAddRemoveElement</button>
+</body>
+
+</html>

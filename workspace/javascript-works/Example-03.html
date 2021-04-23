@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fnShowPara() {
+            something = 100;
+            var tag = document.getElementsByTagName('p')[0].firstChild
+
+            console.log("Body is : ", document.body)
+            console.log("Body is : " + document.body)
+
+            console.log(tag);
+            console.log(tag.nodeName);
+            console.log(tag.nodeValue);
+            console.log(document.body.childNodes[0]);
+        }
+
+        function fnShowColor() {
+            let __body = document.body
+            // console.log(__body.attributes.length);
+
+            for (let i = 0; i < __body.attributes.length; i++) {
+                // console.log(__body.attributes[i]);
+
+                if (__body.attributes[i].nodeName == 'bgcolor') {
+                    console.log("Your Web Application BG COLOR: " + __body.attributes[i].nodeValue)
+                }
+            }
+        }
+
+        function fnGetSetColor() {
+            let __bgcolor = document.body.getAttribute("bgcolor");
+            console.log("BG Color :", __bgcolor);
+            let __newColor = prompt("Enter Your favorite color", "cyan")
+            document.body.setAttribute("bgcolor", __newColor)
+        }
+
+        function fnSetColor(color) {
+            document.body.setAttribute("bgcolor", color)
+        }
+
+
+        function fnLetVar() {
+
+            for (let x = 0; x < 10; x++) {
+                console.log("Value of X " + x);
+            }
+
+            // if you are using let this will not work 
+            // if you are using var this will work 
+            // console.log("In Last Line - Value of X " + x);
+            const c = 100;
+            console.log(c);
+            c = 123;
+        }
+
+        console.log(myvar)
+        var myvar = 100;
+
+    </script>
+</head>
+
+<body bgcolor="cyan">
+    <p>Hello i'm first para</p>
+    <button onclick="fnShowPara()">Get Para Content</button>
+    <button onclick="fnShowColor()">Show Color</button>
+    <button onclick="fnGetSetColor()">Get Set Color</button>
+    <button onclick="fnLetVar()">Let Var</button>
+    <br>
+    <button onmouseover="fnSetColor('cyan')">Cyan</button>
+    <button onmouseover="fnSetColor('red')">Red</button>
+    <button onmouseover="fnSetColor('blue')">Blue</button>
+    <button onmouseover="fnSetColor('green')">Green</button>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var outvar = 2000;
+        function one() {
+            let one_a = 100;
+            var one_var_a = 2000;
+
+            console.log("i'm in one ");
+            two();
+        }
+
+        function two() {
+            let two_a = 100;
+            var two_var_a = 2000;
+            console.log("i'm in two ");
+            three()
+        }
+
+        function three() {
+
+            let x = 10;
+            let y = 20;
+            let sum = x + y;
+
+            // is a function which will evaluate the expression 
+            // which is in string format 
+            console.log(eval("4 * 2 + 2"));
+            console.log(eval(new String('20 + 20').toString()));
+
+            console.log(eval("2 + 2") === eval("4"));
+
+            // console.error("This is error.. ")
+            // console.warn("This is warning message... ")
+
+            console.log("Sum of Number " + sum);
+
+            let emp = {
+                id: 101,
+                name: "Harry"
+            }
+            console.log(emp);
+
+            let emp1 = new Object();
+            emp1.id = 101;
+            emp1.name = "Peter"
+
+            console.log(emp1);
+
+        }
+
+        function fnGetSet() {
+
+            let emp = {
+                id: 101,
+                name: "Harry",
+                salary: 1000,
+                get getId() {
+                    return this.id;
+                },
+                set setName(empname) {
+                    // write some condition 
+                    if (empname.length < 6) {
+                        this.name = "No Name"
+                    } else {
+                        this.name = empname;
+                    }
+                },
+                get getName() {
+                    return this.name
+                }
+            }
+
+            // set or get the value with methods 
+            console.log(emp.getId)
+            emp.setName = "Harry Poter";
+            console.log(emp.getName);
+
+
+
+            // console.log(emp.id);
+            // console.log(emp.name);
+
+            // not a good practice 
+            // emp.id = 102;
+            // emp.name = "Harry poter"
+            // emp.salary = 0.0
+            // console.log(emp.id);
+            // console.log(emp.name);
+            // console.log(emp.salary);
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <button onclick="one()">Click Me </button>
+    <button onclick="fnGetSet()">fnGetSet</button>
+</body>
+
+</html>

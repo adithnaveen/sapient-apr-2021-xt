@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- testing application to build media query  and simple menu -->
+    <style>
+        /* Mobile */
+        @media screen and (min-width:325px) and (max-width:411px) {
+            img {
+                width: 250px;
+                height: 100px;
+            }
+
+            aside {
+                margin-left: 10px;
+                align-items: center;
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 1.2em;
+                font-family: sans-serif;
+            }
+
+            aside div.content {
+                display: block;
+                margin: 10px auto;
+            }
+
+            section {
+                display: block;
+                align-items: center;
+            }
+
+            footer {
+                top: 400px;
+                align-items: center;
+                text-align: center;
+                display: inline-block;
+                background-color: #ccc;
+                width: 90%;
+                float: left;
+                clear: both;
+                position: relative;
+            }
+
+            footer a {
+                display: inline-block;
+            }
+
+            footer p {
+                display: inline-block;
+            }
+        }
+
+        /*IPad*/
+        @media screen and (min-width:412px) and (max-width:768px) {
+            aside {
+                margin-left: 20px;
+                width: 30%;
+                float: left;
+            }
+
+            img {
+                width: 140px;
+                height: 110px;
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 1.7em;
+                font-family: sans-serif;
+            }
+
+            footer {
+                align-items: center;
+                text-align: center;
+                display: inline-block;
+                background-color: #ccc;
+                width: 90%;
+                float: left;
+                clear: both;
+            }
+
+            footer a {
+                display: inline-block;
+            }
+
+            footer p {
+                display: inline-block;
+            }
+
+        }
+
+        /* FOR SCREEN*/
+        @media screen and (min-width:769px) {
+            aside {
+                margin-left: 50px;
+                width: 30%;
+                float: left;
+                display: block;
+            }
+
+            img {
+                width: 240px;
+                height: 180px;
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 3em;
+                font-family: sans-serif;
+            }
+
+
+            footer {
+                align-items: center;
+                text-align: center;
+                display: inline-block;
+                background-color: #ccc;
+                width: 90%;
+                float: left;
+                clear: both;
+            }
+
+            footer a {
+                display: inline-block;
+            }
+
+            footer p {
+                display: inline-block;
+            }
+
+            nav::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+
+            nav {
+                position: relative;
+                top: 30px;
+                left: 50px;
+                width: 100%;
+            }
+
+            nav ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            nav ul li:hover {
+                background-color: cyan;
+                display: block;
+            }
+
+            nav>ul>li {
+                float: left;
+            }
+
+            nav ul ul {
+                position: absolute;
+                top: 100%;
+                background-color: beige;
+                display: none;
+            }
+
+            nav ul li:hover>ul {
+                display: block;
+                background-color: blanchedalmond;
+            }
+
+            nav ul li a:hover>ul {
+                display: inline-block;
+                position: relative;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Main 1 </a>
+                <ul>
+                    <li>sub-main1-1</li>
+                    <li>sub-main1-2</li>
+                    <li>sub-main1-3</li>
+                </ul>
+            </li>
+            <li>Main2
+
+                <ul>
+                    <li>sub-main2-1</li>
+                    <li>sub-main2-2</li>
+                    <li>sub-main2-3</li>
+                </ul>
+            </li>
+            <li>Main3
+                <ul>
+                    <li>sub-main3-1</li>
+                    <li>sub-main3-2</li>
+                    <li>sub-main3-3</li>
+                </ul>
+            </li>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>This is heading</h1>
+    </header>
+    <section>
+        <aside>
+            <div class="content">
+                <img src="./graphics/photo_seating.jpg" alt="">
+            </div>
+        </aside>
+        <aside>
+            <div class="content">
+                <img src="./graphics/photo_seating.jpg" alt="">
+            </div>
+        </aside>
+        <aside>
+            <div class="content">
+                <img src="./graphics/photo_seating.jpg" alt="">
+            </div>
+        </aside>
+    </section>
+
+    <footer>
+        &copy;2021
+        <a href="#">Company Link </a>
+        <p>Terms & Condition</p>
+    </footer>
+</body>
+
+</html>

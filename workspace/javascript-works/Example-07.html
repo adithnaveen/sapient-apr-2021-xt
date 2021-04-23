@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function hi() {
+            console.log("i'm from function hi ");
+        }
+
+        var fnOne = function () {
+            console.log("I'm from fnOne")
+        }
+        console.log(fnOne);
+        fnOne()
+
+
+        var fnTwo = () => console.log("I'm from fnTwo")
+
+        console.log(fnTwo)
+        fnTwo()
+
+        var addNumbers = (a, b, c) => a + b + c;
+
+        console.log(addNumbers(10, 20, 30));
+
+        let fnCannotVote = () => {
+            console.log("You cannot Vote")
+        }
+        let age = 15
+        fnCheckVote = (age > 18) ? () => { console.log("you Can Vote") } : () => fnCannotVote()
+
+        fnCheckVote()
+
+    </script>
+</head>
+
+<body>
+    <button onclick="hi()">Hi </button>
+</body>
+
+</html>
