@@ -35,6 +35,50 @@
 
         fnCheckVote()
 
+
+
+        // access with / without arrow 
+        function Person() {
+            this.pid = 101;
+            this.pname = "Hinduja"
+            this.display = function () {
+                console.log(this.pid + ", " + this.pname)
+
+                let displayId = () => {
+                    console.log(this.pid);
+                }
+                displayId();
+
+            }
+        }
+
+        const per = new Person;
+        per.display();
+
+
+        // to show working of arrow, arrow functions in the object 
+        // cannot refer to this 
+        let NewPerson = {
+            pname: "Ms. Hinduja",
+            pid: 101,
+            display: function () {
+                console.log(this.pname);
+            },
+            display1: () => {
+                console.log(this.pname);
+            }
+        }
+
+        NewPerson.display();
+        NewPerson.display1();
+
+
+
+
+
+
+
+
     </script>
 </head>
 

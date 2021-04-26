@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+        function fnValidateName() {
+            let userName = fnGetFieldFromForm("loginForm", "uname")
+            console.log("UserName : ", userName);
+
+            if (userName.charAt(0) === " ") {
+                fnGetId("#error").innerHTML
+                    = "Dont start the name with leading spaces"
+                return false;
+            } else if (userName.length < 6) {
+                fnGetId("#error").innerHTML
+                    = "Please Enter min 6 chars"
+                return false;
+            }
+        }
+        function fnEnableDisable() {
+            let termsValue = fnGetFieldFromForm("loginForm", "terms");
+            console.log(termsValue);
+            if (termsValue === 'a') {
+                fnGetId("#reg-btn").disabled = false;
+            } else {
+                fnGetId("#reg-btn").disabled = true;
+            }
+
+        }
+        function fnGetId(id) {
+            return document.querySelector(id)
+        }
+        function fnGetFieldFromForm(formName, fieldName) {
+            return document[formName][fieldName].value
+        }
+
+        function fnOnload() {
+            console.log("Page Loaded");
+        }
+        function fnOnUnload() {
+            console.log("Page Unloaded");
+
+        }
+
+        function fnShowDate() {
+            let d = new Date();
+            // console.log(d);
+            let hrs = d.getHours();
+            let mins = d.getMinutes()
+            let secs = d.getSeconds()
+            let str = hrs + " -  " + mins + " - " + secs
+            // fnGetId("#myDateDiv").innerHTML = str;
+            document.getElementById("myDateDiv").innerHTML = str;
+            setTimeout('fnShowDate()', 1000);
+
+            // setTimeout(() => {
+            //     console.log("i'm called... ")
+            // }, 1000);
+        }
+
+        function fnOpenWindow() {
+            let ref = window.open("Example-08.html", "Example-08", "height=200,width=400")
+            // ref.moveBy(100, 200)
+            ref.moveTo(100, 200)
+        }
+
+        function fnWindowLocation() {
+            // console.log(window.location);
+
+            switch (window.location.protocol) {
+                case "http:":
+                    console.log("The web application loaded on HTTP Protocol")
+                    break;
+                case "file:":
+                    console.log("The web application loaded on FILE Protocol")
+                    break;
+                default:
+                    console.log("Unknown source")
+                    break;
+            }
+        }
+
+    </script>
+
+    <style>
+        #error {
+            color: red;
+
+        }
+    </style>
+</head>
+
+<body onload="fnShowDate()" onunload="fnOnUnload()">
+
+    <div id="myDateDiv"></div>
+    <button onclick="fnOpenWindow()">Open Window</button>
+    <button onclick="fnWindowLocation()">fnWindowLocation</button>
+    <form method="POST" name="loginForm">
+        <div>
+            <label for="uname">User Name</label>
+            <input type="text" onblur="fnValidateName()" name="uname" id="uname" required placeholder="Enter Name">
+            <div id="error"></div>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required placeholder="Enter Email">
+        </div>
+        <div>
+            <input type="radio" onclick="fnEnableDisable()" name="terms" id="terms" value="a"> Accept |
+
+            <input type="radio" onclick="fnEnableDisable()" name="terms" id="terms" value="r"> Reject
+        </div>
+        <div>
+            <button name="reg-btn" id="reg-btn" disabled>Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>

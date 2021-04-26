@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+        function fnString() {
+            // let myString  = "Hello"
+            let myString1 = new String("Hello")
+
+            console.log("Length " + myString1.length);
+            console.log("To Lower Case " + myString1.toLocaleLowerCase());
+            console.log("To Upper Case " + myString1.toLocaleUpperCase());
+            console.log("check l in hello " + myString1.indexOf("l"));
+            console.log("check l in hello as last index " + myString1.lastIndexOf("l"));
+            console.log("Sub String " + myString1.substring(1, 4));
+            console.log("Sub Str " + "Hindustan".substr(2, 4))
+            console.log("Char@2 " + myString1.charAt(2));
+
+            console.log("replace ll in hello " + myString1.replace("ll", "pp"));
+            let namesArray = "Ayush:Vikash:Hinduja".split(":")
+        }
+
+        function fnString1() {
+            document.write("google".link("https://google.com") + "<br>")
+            document.write("Strike".strike() + "<br>")
+            document.write("E=MC" + "2".sup() + "<br>")
+            document.write("h" + "2".sub() + "o" + "<br>")
+            document.write("Should be in italics".italics() + "<br>")
+            document.write("Should be in bold".bold() + "<br>")
+
+            console.log("Hello this is long\
+             string")
+            alert("this is another text \n which is long")
+        }
+
+
+        function fnRegEx1() {
+            let x = /zz/;
+            console.log("hello".match(x));
+
+            let salary = "1234567";
+            console.log(salary.match(/\d+/));
+
+            let input = prompt("Enter octal value", "032783")
+            // if (input.match(/[0-7]+/).toString()  === input) {
+            if (input.match(/[0-7]+/) == input) {
+                console.log("you entered octal value")
+            } else {
+                console.log("Sorry invalid octal value");
+            }
+
+            // you can prefix it with + or - 
+            let amount = prompt("Enter Amount")
+            if (amount.match(/[+-]?\d+/) == amount) {
+                console.log("Valid Entry");
+            } else {
+                console.log("invlid Entry");
+            }
+        }
+
+        function fnValidateAmount(amount) {
+            return amount.match(/[+-]?\d+/) == amount;
+        }
+
+        // name@website.com
+        function fnEmailValidate() {
+            let regEx = /[a-zA-Z]+[@][a-zA-Z]+[.][com|in]/;
+        }
+
+        // 192.168.1.56 (you can enter number between 1 to 3 chars 
+        // and each number seperated by . )
+        function fnEnterIPAddress() {
+            let regExp = /\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/
+        }
+
+
+
+
+    </script>
+</head>
+<!-- working with string class -->
+
+<body>
+    <button onclick="fnString()">fnString</button>
+    <button onclick="fnString1()">fnString1</button>
+    <button onclick="fnRegEx1()">fnRegEx1()</button>
+    <button onclick="console.log(fnValidateAmount('&1234'))">fnValidateAmount</button>
+</body>
+
+</html>
