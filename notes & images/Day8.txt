@@ -1,0 +1,110 @@
+Day 8 
+-------------------------------- 
+
+Micrcoservice 
+Micro Front End 
+
+-- this is function + this is class 
+function hi() {}
+
+for(i=0; i<arr.length; i++)
+
+arr.forEach(a => {
+	
+})
+
+
+
+
+
+for (let n of fibonacci) {
+    if (n > 1000)
+        break
+    console.log(n)
+}
+
+
+PAAS
+IAAS
+SAAS
+
+
+function hi(){alert("hi");alert("hi")}
+
+>,>=,<, <=
+>>>, <<< 
+==, ===, !=, !== 
+
+44==44.0 - true 
+44===444.0 - false 
+
+++, -- , +=, -=, *= 
+
+
+
+class Hi{};
+
+void main() {
+	
+}
+
+class App {
+	public static void main(String []arg) {
+	}
+}
+
+splice(index, <noofelement to delete>, <add element>)
+
+splice(3)
+splice(3, 1)
+splice(3, 1, 2)
+splice(3, 0, 20, 30,40)
+
+splice(arr.length-1, 1)
+
+
+1. accept numbers from end user as prompt till user enters 0 
+10
+20
+30
+0
+2. Keep in array 
+3. ask the end user to check if the number is present 
+	20 
+
+output: Element Found 
+
+git clone https://tools.publicis.sapient.com/bitbucket/scm/psixt/assessment-1.git
+git branch rismayan-Rishab
+git checkout rismayan-Rishab
+
+paste your code 
+
+index.html 
+css
+- style.css 
+
+git add .
+git commit -m "added assessment code "
+git push origin rismayan-Rishab
+
+your any where 
+1. Write code in VS Code 
+
+
+
+
+
+
+
+
+
+
+
+
+References 
+
+Advance Video Tags - HTML-5 
+https://blog.addpipe.com/10-advanced-features-in-html5-video-player/#startorstopthevideoatacertainpointortimestamp
+
+

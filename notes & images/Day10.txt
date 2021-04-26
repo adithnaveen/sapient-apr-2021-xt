@@ -1,0 +1,67 @@
+optional data parameters 
+
+Object - get set, proto 
+Person / String / Number / Anything 
+
+String - length 
+	   - charAt 
+	   - indexOf 
+	   - lastIndexOf 
+	   
+RegEx 
+? - 0 or 1 occurance 
+* - 0 or more 
++ - 1 or more 
+. - single occrance 
+[] - series of values 
+^ - negate 
+\w - white spaces  
+\s
+
+
+
+
+
+
+METHOD - GET -> any value which you enter in the form is sent as query string 
+			each query string is sperated with & 
+			start of query string will be with ? 
+			
+http://127.0.0.1:5500/Example-09.html?uname=kumar&email=hello%40gmail.com			
+			
+			
+		POST -> the browser will create a packet/body then it is 
+			    dispatched 
+				// you can apply some security algorithm 
+				
+		http://127.0.0.1:5500/Example-09.html
+
+
+
+1. Orchestrator - Name 
+PPT 
+
+Scrum Masters - 508 / AA
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

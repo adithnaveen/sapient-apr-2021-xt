@@ -1,0 +1,155 @@
+alert 
+prompt 
+confirm 
+
+
+logging levels 
+dom inspections 
+profiler 
+debugger 
+
+
+DOM 
+- JAVA 
+- C 
+- Python 
+- Java Script 
+
+SAX 
+ - JAVA 
+ - C 
+ - Python 
+ - Java Script
+
+
+
+<emps>
+	<emp>
+		<name>Harry</name>
+		<desig>SE</desig>
+		<city>BEngaluru</city>
+	</emp>
+	<emp>
+		<name>Harry</name>
+		<desig>SE</desig>
+		<city>BEngaluru</city>
+	</emp>
+	<emp>
+		<name>Harry</name>
+		<desig>SE</desig>
+		<city>BEngaluru</city>
+	</emp>
+</emps> - was read by some program 
+
+emps 
+emps.emp[0]
+emps.emp[0].desig 
+
+
+
+<html>
+	<head>
+		<title>Hello</title>
+	</head>
+	</body>
+		<p>Hello</p>
+	</body>
+</html>
+
+
+
+alert("hi")
+-> window.alert("hi")
+window.prompt("enter age")
+
+window.document.functionXXX 
+
+
+
+<p>Hi</p>
+
+cosnt 
+let 
+var 
+
+hoisting 
+<script>
+ var myvar ; 
+    function fnLetVar() {
+
+            for (let x = 0; x < 10; x++) {
+                console.log("Value of X " + x);
+            }
+
+           
+        }
+
+        console.log(myvar)
+        var myvar = 100;
+
+    </script>
+
+
+createElement()
+createTextNode 
+
+- appendNode
+- replaceNode 
+- removeNode - child  
+
+
+
+class Emp {
+	private int empId; 
+	private String empName; 
+	
+	public void setEmpId(int id) {
+		empId = id; 
+	}
+	
+	public int getEmpId() {
+		return empId;
+	}
+	
+}
+
+
+Emp e = new Emp(); 
+//e.empId = 123; 
+// e.empName =""; 
+e.setEmpId(123); 
+
+
+
+
+int hi() {
+	return 10; 
+}
+
+int *hi1() {
+	return 10; 
+}
+
+int hi2 (int * hi1) {
+	// you can call hi1 
+}
+
+main() {
+	int *hiref = hi1(); 
+	hi2(hiref)
+	
+	printf("%d", hi())
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
