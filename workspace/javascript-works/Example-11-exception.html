@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">Click Me</button>
+    <button id="btn1">Click Me-BTN1</button>
+    <button id="btn2">Click Me-BTN2</button>
+
+    <script type="text/javascript">
+        document.querySelector("#btn").addEventListener("click", () => {
+            try {
+                allert("hi you clicked Me")
+            } catch (err) {
+                console.log(err);
+                console.log("Error Name ", err.name);
+                console.log("Message ", err.message)
+
+            }
+            console.log("Some Business logic... ");
+        })
+        ////////////////////////////////////////////////////
+        document.getElementById("btn1").addEventListener("click", () => {
+            let name = prompt("Enter Name")
+            let age = prompt("enter age", "18")
+
+            try {
+                if (age < 18) {
+                    // console.log("sorry you cannot vote for " + (18 - age) + " years")
+                    throw "ageError"
+                } else {
+                    console.log("You can vote Mr/Ms/Mrs " + name);
+                }
+            } catch (err) {
+                if (err === "ageError") {
+                    console.warn("sorry you cannot vote for " + (18 - age) + " years")
+                }
+            }
+        })
+        ///////////////////////////////////////////////
+        document.getElementById("btn2").addEventListener("click", () => {
+            allert("some error")
+        })
+
+        function errorHanlder(message, url, lineNumber) {
+            console.log("Message " + message + " page URL " + url + " Line Number ", lineNumber);
+        }
+
+        window.onerror = errorHanlder;
+
+    </script>
+</body>
+
+</html>

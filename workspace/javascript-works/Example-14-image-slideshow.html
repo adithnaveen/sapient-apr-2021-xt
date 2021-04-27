@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-image {
+            min-height: 300px;
+            width: 20%;
+            border: 1px solid black;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 7%;
+            display: block;
+        }
+
+        .center-img {
+            width: 200px;
+            height: 270px;
+            position: absolute;
+        }
+
+        .slide-img {
+            width: 50%;
+            display: inline;
+            max-height: 100px
+        }
+
+        .icons {
+            width: 70px;
+            height: 100px;
+            transition: width .5s, height .5s ease-in-out;
+        }
+
+        .icons:hover {
+            width: 80px;
+            height: 110px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="main-image">
+        <img id="main-image" class="center-img" src="./images/mickey.png" alt="">
+    </div>
+    <div class="slide-img">
+        <img class="icons" src="./images/mickey.png" alt="mickey">
+        <img class="icons" src="./images/minnie.png" alt="minnie">
+        <img class="icons" src="./images/talespin.jpeg" alt="talesping ">
+    </div>
+
+
+
+
+    <script type="text/javascript">
+        var icons = document.getElementsByClassName('icons');
+        for (let i = 0; i < icons.length; i++) {
+            icons[i].addEventListener('mouseover', (icon) => {
+                console.log(icon);
+                // console.log(icon.target.currentSrc);
+                document.getElementById("main-image").src = icon.target.currentSrc
+            })
+        }
+    </script>
+</body>
+
+</html>

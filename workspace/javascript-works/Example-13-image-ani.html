@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 100px;
+            height: 130px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function fnChange(imgName) {
+            document.images[0].src = "./images/" + imgName
+        }
+    </script>
+</head>
+
+<body>
+    <img src="./images/mickey.png" alt="Cartoon Image" onmouseover="fnChange('minnie.png')"
+        onmouseout="fnChange('mickey.png')">
+</body>
+
+</html>

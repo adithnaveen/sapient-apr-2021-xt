@@ -44,6 +44,7 @@ function fnValidateName(){
 		
 		spl="1234567890.`~!@#$%^&*()_\\\'\"<>,/?";
 		
+		// "ayush5".indexOf("5")
 		for(var i=0; i<spl.length; i++){
 			if(fname.indexOf(spl.charAt(i))>=0){
 				alert("Sorry you cannot have special characters or numbers in name");
