@@ -2,6 +2,7 @@ documents
 /**/node_modules/
 /**/.DS_Store
 
+*.tar
 *.zip
 *.rar
 *.class

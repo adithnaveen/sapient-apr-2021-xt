@@ -1,0 +1,48 @@
+babel online 
+babel compiler 
+
+nodejs 
+- node 
+- npm 
+
+
+> npm i babel-cli
+> npm install --save-dev babel-cli babel-preset-es2015
+> create folder as below 
+	- script	
+		- sample.js
+	- dist 
+
+> npm i bootstrap
+
+ 
+template strings 
+destructuring 
+self invoking function 
+function return an function 
+call back 
+modules and classes 
+collection & proxies 
+
+clone node 
+	let ele = document.getElementById("someElement")
+	let newElement = ele.cloneNode(); 
+	ele.appendChild(newElement)
+
+register more than 1 event listener 
+
+document.getElementById("btn").addEventListener("click", () =>{})
+document.getElementById("btn").addEventListener("mouseover", () =>{})
+document.getElementById("btn").addEventListener("mouseover", () =>{})
+
+
+<button id="btn">Clicke Me </button>
+
+Map<String, Integer> map = new HashMap<String,Integer>(); 
+
+
+
+
+
+
+

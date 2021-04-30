@@ -1,0 +1,256 @@
+o    Simple Form Validation
+
+
+
+http://127.0.0.1:5501/Registration.htm?userName=kumar&usrPwd=sdflkj&cpwd=sdf&qual=select&addrs=&country=&terms=A&regbtn=Register
+
+http://127.0.0.1:5501/Registration.htm?userName=&usrPwd=&cpwd=&qual=select&addrs=&country=&terms=A&regbtn=Register
+
+
+
+o    Forms and the onSubmit Event Handler
+o    The onError Event
+o    Capturing and Bubbling (Trickle Down and Bubble Up)
+
+
+
+Capturing -> /html/body/div/div[1]/main/article/h2[5]/a. <- bubbling 
+
+
+<div>
+	<label for="uname">User Name </label>
+	<input type="text" name="uname" /> 
+</div>
+
+
+
+
+
+o    Mouse Events and Images—Rollovers
+o    Creating a Slideshow with Mouse Events
+
+
+
+<script>
+	 document.getElementById("my-btn").addEventListener("click", function() {
+	 	// your logic goes here
+	 })
+</script>
+
+<body>
+	<button id="my-btn" >clickme</button>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+o    Bubbling and Capturing
+Event Listeners with the W3C Model
+o    Adding an Event
+o    Registering More Than One Event
+o    Removing an EventListener
+o    Event Listeners with Microsoft Internet Explorer
+o    Event Properties Revisited
+
+
+
+Function as Data
+Anonymous function
+Callbacks
+Self-invoking function
+Inner (Private) Functions 
+Functions that Return Functions 
+
+
+   user-defined objects
+ Destructuring
+o    Parameters and Spread
+
+
+
+o    Modules and Classes
+o    Collections, Proxies | Iterators and Generators
+
+
+
+
+
+
+
+
+style.css 
+// code for desktop 
+1000 lines of code 
+
+// code for ipad 
+@media screen and (min-width:678px) and (max-width:900) {
+700 lines of code 
+}
+1700 
+
+@media screen and (min-width:400px) and (max-width:678) {
+600 lines code 
+}
+
+
+
+------------------------------------------------------------
+
+ 
+600 {bgcolor, color, font color, asdie.... }
+
+ipad 
+@media {700 {aside only width ,img }}
+
+desktop 
+100 
+
+load on mobile = 600 
+load on ipad = 600 + 700 = 1300
+load on desktop = 600+1000 ()
+
+
+
+
+
+
+
+
+
+
+
+
+mobile -> 1600 
+
+1. there may more css needed for Desktop 
+2. no of elements + dimentions + precision in the Desktop - may be more 
+3. multiple patterns 
+
+
+
+
+
+
+
+class Employee {
+	constructor(name, eid) {
+		this.name = name; 
+		this.eid = eid; 
+	}
+	
+	display() {
+		console.log("Name :" , this.name);
+		consoel.log("Eid ", this.eid)
+	}
+}
+
+arr.filter(x => x===100)
+
+for(var i=0; i<arr.length; i++) {
+	if(arr[i]===100) {
+		return arr[i]
+	}
+	
+	return null;
+}
+
+
+
+
+
+
+
+
+
+function Employee(name, eid) {
+	this.name = name; 
+	this.eid= eid; 
+	
+	var myprivatefunction = function() {}
+}
+
+Employee.prototype.mypub = function() {}
+
+let, const 
+
+
+
+
+
+
+
+
+
+
+https://kangax.github.io/compat-table/es6/
+https://caniuse.com/
+
+
+
+Math.trunc(1234.3)
+
+1234
+
+
+
+evens.map(v => v + 1)
+
+
+R - Read
+E - Evaluate 
+P - Prints 
+L - loop 
+
+
+1. Synchronous Programming 
+2. Asynchronous Programming 
+	
+3. Reactive Programming 
+program-> i need data ->  cloud (5 secs) -> (prepare for rending) -> when the dat comes after 5 seconds just put 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,223 @@
+const / let {} - defined in the scope 
+var {} - here also 
+
+function hi() {
+	for(var x = 10; i<100; i<<) {
+		// its available 
+		x = 33; 
+	}
+	
+	its available 
+}
+
+but not available  
+
+
+
+section {}
+.mydiv {}
+section #mydiv#faside {
+
+}
+<section>
+	<div id="mydiv">
+		<aside id="faside">
+		</aside>
+		<aside>
+		</aside>
+		<aside>
+		</aside>
+	</div>
+	<aside class="faside">
+	</aside>
+</section>
+
+
+
+
+
+
+
+section {}
+
+#first {}
+#firstp{}
+setction #first#firstp{}
+
+section .first.firstp {
+}
+<section>
+	<aside class="first">
+		<p class="firstp">hello</p>
+	</aside>
+	<aside second ></aside>
+	<aside third ></aside>		
+</section>
+
+<aside></aside>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Team-1 - 
+Team-2 - 
+	Why ul is better than Span / div 
+
+<ul>
+	<li>
+		<ul>
+			<li>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>	
+				</ul>
+			</li>
+			<li></li>
+			<li></li>
+			<li></li>			
+		</ul>
+	</li>
+	<li></li>
+	<li></li>
+	<li></li>			
+</ul>
+
+----------------------------
+
+<table>
+	<table>
+		<table></div>
+		<table></div>
+		<table></div>
+	</div>
+	<table></div>
+	<table></div>		
+</div>
+
+
+.class , #id 
+
+
+Team-3 
+Team-4 
+
+
+102 User Stories 
+ -> close user stories in jira agaist DOD / DOR 
+ -> all branches have to come to dev -> master 
+ -> git tag sprint-1  
+ 
+ -> create branch from jira 
+
+
+
+is-a 
+person is a human 
+car is a vehicle 
+car is a streering 
+
+
+
+class Person {}
+class Employee extends Person{}
+
+
+Person p = new Employee(); (valid)
+Employee e = (Employee) new Person(); (invalidat)
+
+
+
+divide(10, 20)
+	.then(.. do work..) - hit end point - will take time 
+	.then(.. do work..) - convert to json 
+	.then(.. do work..) - render to html 
+	.catch(err) 
+
+jasmine, 
+mocha, 
+chai, 
+protractor,
+karma,
+Cucumber 
+
+ 
+ 
+function hi(name) {
+	if(name.length<5){
+		throw "sorry please enter min 5 chars"
+	}else {
+		log("happy")
+	}
+}
+
+
+function process(name, salary) {
+	try {
+	hi(name)
+	// BL -> will surely work 
+	}catch(err) {
+		warn(err)
+	}
+}
+
+
+class Promise {
+	constructor(resolve, reject){
+		this.resolve = resolve; 
+		this.reject = reject; 
+	}
+	
+	// get  
+	
+	then() {
+	// do something 
+		return new Promise(resolve, reject)
+	}
+	
+	catch(err ) {
+		return new Error(err)
+	}
+}
+
+
+
+
+https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+
+1xx - req from client has gone  = 100 
+2xx - success from server , 200 OK, 201 CREATED 
+3xx - redirection - 307 redirection 
+4xx - client made a request but has some problem , 404 , 405 (GET/POST)
+5xx - server got the request, processing but some error  - 500 
+
+
+0 - initiated
+1 - sent 
+2 - on server 
+3 - got 
+4 - success 
+
+
+
+
+
