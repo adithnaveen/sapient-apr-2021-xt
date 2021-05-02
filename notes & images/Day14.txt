@@ -219,5 +219,68 @@ https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
 
 
 
+login Trainer 
+	-> html form 
+	-> css 
+	-> validation with JS 
+	-> submit
+	-> ack (should be taken from server)
+
+
+undrestnad swagger 
+- you hit 
+
+
+
+
+
+
+
+
+
+
+{
+  "fullname": "Naveen Kumar",
+  "email": "naveen@naveen.com",
+  "password": "naveen1234", 
+  "pic" : "something"
+}
+
+
+https://trainingmanagementapp.herokuapp.com/api/trainers/signup
+
+
+{
+  "message": "Trainer signup successfully",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDhiZDJhMTgxMDQ2MTAwMTdlODVkNTAiLCJpYXQiOjE2MTk3NzYxNjIsImV4cCI6MTYxOTc4Njk2Mn0.T-K-HCvVXw4hsyxfd_L7fymZmNb24zgNAfBQpGl54MM"
+}
+
+
+1. registration of trainer 
+fill the form 
+	-> get the token 
+		-> store it in cookie 
+			-> invoke dashboard.html 
+			
+2. registration of trainer 
+fill the form 
+	-> get the token 
+		-> take user to trainer sign up 
+			-> Your account is created, pls login 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
