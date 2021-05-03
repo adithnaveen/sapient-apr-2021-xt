@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Working with Javascript class</h2>
+    <div id="mydiv"></div>
+
+    <script type="text/javascript">
+        class Posts {
+            // as of now the variable is hard coded 
+            state = [
+                { author: "Deepesh", city: "Bengaluru" },
+                { author: "Vikash", city: "Delhi" },
+                { author: "Gautham", city: "Hyderabad" }
+            ];
+
+            constructor(url) {
+                this.url = url;
+            }
+            getData() {
+                console.log("in -> getData()");
+                // fetch the records from end point 
+                let temp = { author: "Harsh", city: "New York" }
+                this.state = [...this.state, temp]
+            }
+
+            render() {
+                this.getData();
+                Object.keys(this.state).map(key => {
+                    document.querySelector("#mydiv").innerHTML = document.querySelector("#mydiv").innerHTML +
+                        this.state[key].author + ", " + this.state[key].city + "<br>";
+                })
+            }
+        }
+
+        let url = "http://your.com/something/goes/here"
+        posts = new Posts(url);
+        posts.render();
+
+    </script>
+</body>
+
+</html>
