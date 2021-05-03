@@ -6,4 +6,13 @@ class HelloWorld {
 
 let x = (fName) => {
     console.log("hello ", fName)
-} 
+}
+
+
+
+class Car {} 
+class Ford extends Car {}
+
+
+
+ 
