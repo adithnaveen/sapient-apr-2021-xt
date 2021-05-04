@@ -1,0 +1,117 @@
+Recap Of AJAX 
+
+- while comitting have meaning full messages 
+- merge all the code to master branch
+- create a git tag after merge 
+- is jira task closed ? 
+
+----------------------------------------------------------
+
+
+Recap Of AJAX - GET / POST 
+
+inheritence prototypal 
+modules 
+webpack 
+closures 
+
+
+http/s -> html / css / js / xml /json /text etc 
+ftp 
+smtp 
+
+
+URL - locator
+URI - indentifier 
+
+
+class Car {} 
+class Ford extends Car {}
+
+ford__proto__ = car 
+
+
+web pack 
+---------------------------
+
+foo.js 
+import bar from './bar.js';
+import bar1 from './bar1.js';
+
+bar();
+
+bar.js 
+----------- 
+export default function bar() {
+  //
+}
+
+bar1.js 
+----------- 
+export default function bar1() {
+  //
+}
+
+
+working with webpack 
+
+npm install --save-dev webpack-cli webpack 
+
+import - es6 standard 
+require - js standard 
+
+
+closures 
+
+function can have functions inside 
+-> function can call a function with reference of another function 
+--> callback 
+
+
+function myfunction () {
+	return "hi"
+}
+
+
+function myfunction () {
+	return function() {
+		return "hi"
+	}
+}
+
+
+function myfunction () {
+	let myval = 123; 
+	return function() {
+		return function() {
+			return myval
+		}
+	}
+}
+
+// from here you can hold the reference of 
+
+
+1. hit the end point 
+2. html 
+3. js 
+
+133 - To Login/Sign in as Client
+134 - To Login/Sign In as Trainer
+136 - User List 
+
+
+Team-1
+Team-2
+
+
+
+
+
+
+
+
+
+
+
+
