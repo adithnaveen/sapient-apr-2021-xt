@@ -1,6 +1,7 @@
 // these functions as of now is not eligible to get the 
 // scope out of this file 
 export function add (num1, num2) {
+    console.log(typeof num1)
     return num1 + num2; 
 }
 
