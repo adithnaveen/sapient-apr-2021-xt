@@ -1,0 +1,165 @@
+Day 15 (XT 102) - Day 2 
+
+function x() {
+with(math) {
+	pi 
+	sin
+	}
+}
+
+call / apply 
+
+
+1. Unit Testing - 1 function 
+2. Integration Testing - more than 1 function 
+3. Component  - Testing set of integrated functions
+Jasmine, Mocha, Jest, jsunit, qunit etc 
+
+4. E2E - end to end testing (UI) - Selenium, Protractor, Tosca, RPA (uipath, blue prism) etc - banking, insurance 
+SDET 
+
+Jest -> React 
+
+function hi(name) {
+	return  "hi " + name; 
+}
+
+mocha  + chai 
+
+describe("This is test suite", () => {
+	test("Testing for name", () => {
+		let actualValue = hi("Akhilesh")
+		let expectedValue = "Hello Akhilesh"; 
+		// validate 
+		expect(actualValue, expectedValue)
+	})
+	test("Testing for password", () => {})
+})
+
+BDD - KIND OF ENGLISH / Your Local Language 
+
+GIVEN - pre condition 
+AND - multi statement 
+WHEN - actual work 
+AND - multi statement 
+BUT - password should contain atleast 1 spl char 
+THEN - post condition 
+AND - multi statement 
+AND - multi statement 
+AND - multi statement 
+
+
+GIVEN 
+WHEN 
+THEN
+AND
+BUT 
+
+
+
+
+
+
+foo.should.be.a('string');
+foo.should.equal('bar');
+foo.should.have.lengthOf(3);
+tea.should.have.property('flavors')
+  .with.lengthOf(3);
+
+
+
+expect(foo).to.be.a('string');
+expect(foo).to.equal('bar');
+expect(foo).to.have.lengthOf(3);
+expect(tea).to.have.property('flavors')
+  .with.lengthOf(3);
+  
+  
+  
+
+  assert.typeOf(foo, 'string');
+  assert.equal(foo, 'bar');
+  assert.lengthOf(foo, 3)
+  assert.property(tea, 'flavors');
+  assert.lengthOf(tea.flavors, 3);
+                
+  
+  
+setting up JEST 
+
+
+1. npm init -y 
+2. npm i --save-dev jest webpack webpack-cli 
+3. 
+  
+
+
+Anti Pattern 
+
+
+
+const addUser =() => {
+    const newUserName = document.querySelector("input#name").value
+    const newUserAge = document.querySelector("input#age").value
+	if(!validate(newUserName, newUserAge)){return false;}
+	
+    const userList = document.querySelector(".user-list")
+   
+    userList.appendChild(generateTextElement(newUserName, newUserAge))
+
+	clearAndFocus();
+}
+
+const validate = (name, age) => {
+
+    if(newUserName.length <6 || newUserAge < 0) {
+        return false;
+    }
+	return true;
+	
+}
+
+const generateTextElement = (name, age) => {
+    const element = document.createElement("li"); 
+    element.classList.add("user-item")
+    element.textContent = newUserName +" is " + newUserAge +" years old"
+	return element 
+}
+
+const clearAndFocus =() => {
+
+    document.querySelector("input#name").value =''
+    document.querySelector("input#age").value =''
+    document.querySelector("input#name").focus() 
+	
+}
+
+
+
+
+
+
+
+util.js 
+- util.test.js 
+- util.spec.js 
+
+
+
+
+test('adds 1 + 2 to equal 3', () => {
+  expect(sum(1, 2)).toBe(3);
+});
+
+
+
+  
+  
+  
+  
+
+
+
+
+
+
