@@ -1,0 +1,198 @@
+All function - javascript (best practices to be shown)
+Test cases, with code coverage of min 70% 
+
+
+5 Function login(trainer/client), registration(trainer/client), userlist 
+
+Team 1- client and trainer login is done 
+	UserList is pending 
+	Test cases - pending 
+	
+Team 2 - need to do best practices, use template strings 
+	UserList is pending 
+	Test cases - pending 
+
+Team 3 - all functions are done 
+	User list UI is left 
+	Test cases - Pending 
+	Need to do bring cohesive work 
+	
+Team 4 - user list is pending 
+	test cases are pending 
+
+
+should not be es2015, instead es6 
+
+class ServerFetch {
+	constructor(url) {
+		this.url = url; 
+	}
+	
+	loginValidateClient() {}
+	loginValidateTrainer() {}
+	registerTrainer() {}
+	registerClient() {}
+	getUserList() {}
+}
+
+
+
+
+
+
+
+	<html>
+		<head>
+			// css 
+			
+		</head>
+		<body>
+			alkshflkjaslfdkja
+		</body>
+			// script 
+	</html>
+	
+	
+
+
+
+
+
+
+app.js
+	import {} from './somefile.js'; 
+	
+file1.js
+file2.js
+file3.js 
+
+you refer app.js 
+
+ 
+
+
+general problems which can be addressed by RegEx 
+
+
+
+
+Program 
+Object Oriented Program 
+
+
+:root {
+	// some vairable 
+	--blackcolor: whilte
+}
+
+body {
+	font:"somefont", 
+	background-color:white; 
+}
+
+
+if 
+function 
+inheritence 
+mixins 
+
+compiler 
+
+LESS / SASS /SCSS 
+
+
+latest trends 2021 
+
+low code / no code approach 
+	5-7 -> entriprise will have this approach 
+	
+web assembly 
+	python / C++ / Java /.Net etc should be able to render on browser 
+		MicroSoft 
+
+NLP 
+
+javascript with AI / ML 
+python with AI / ML 
+
+
+Objective C 
+Swift 
+
+Android 
+	Java 
+	Kotlin 
+	
+Windows 
+	Lumia 9200 
+ 
+PWA -> (code) -> android code 
+			  -> mac code 
+
+phonegap 
+
+cordova 
+.apk 
+
+SPA 
+
+
+
+LESS / SASS /SCSS 
+
+
+section {}
+section .how-to {}
+section .atmosphere {}
+
+
+
+section {
+	font-famile:''
+	.how-to {
+		margin: 10px 5px; 
+	}
+	.atmosphere {}
+}
+
+
+
+SASS / SCSS  (same)
+
+
+SASS -YAML 
+
+$font-stack:    Helvetica, sans-serif
+$primary-color: #333
+
+body
+  font: 100% $font-stack
+  color: $primary-color
+
+-------------------------------------------------
+SCSS - JSON 
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+
+> npm i -g sass 
+> sass ./sass/<filename> ./css/<filename>
+sass ./scss/style.scss ./css/style.css --watch --style=compressed
+
+m1 {
+	margin: 1rem
+}
+
+m2 {
+	margin: 2rem
+}
+
+
+
+
+

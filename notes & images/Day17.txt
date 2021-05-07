@@ -1,0 +1,237 @@
+Vikash 
+const render = () => {
+	validateData()
+	// generated text 
+	// created element 
+	clearFields()
+}
+
+Ayush 
+const validateData =(name, age) => {
+	// validate 
+	/// grow more 
+}
+
+Gautam 
+const clearFields =(name, age, email) => {
+	// clear fields 
+}
+
+Design Pattern - GOF 
+
+WORM - Write Once Read Many 
+
+SPA - Single Page Application 
+MVC 
+MVP 
+MVVM 
+
+
+Rest Jerset 
+Rest Easy 
+Restlet 
+SpringBoot 
+dJango
+
+
+
+console.log(`hi ${name}`)
+
+What Augumentation 
+Why We need Augumentation 
+
+
+
+
+
+
+
+
+
+
+Creational Pattern  
+Singleton 
+-- 1 Objects of Company 
+
+
+class Company {
+	private Company() {
+	}
+	
+	public static Company getInstance() {
+		if(this==null) {
+			return new Company();
+		}else {
+			message -> object already created 
+		}
+	}
+	
+} 
+
+c =  Company.getInstance();
+c1 = Company.getInstance();
+c3 = Company.getInstance();
+
+class Employee {} -- 100 objects of Employee 
+
+
+
+TVS -> nuts & bolts (BMW, Maruti, Mercedes+ 70+ clients)
+
+
+class Car {
+	check(){} 
+	tension() {}
+	
+	constructor(){}
+	constructor(name){}
+	
+	public Car getInstance(type) {
+		switch (type){
+			case "maruti": 
+				return new Maruti(); 
+			case "toyota":
+				return new Toyota(); 
+			case "bmw" :
+				return new BMW(); 
+			case "ford":
+				return new Ford(); 
+		}
+	}
+}
+
+
+
+
+class BMW extends Car{
+	check() {}
+	tension() {}
+	abs(){}
+}
+class Maruti extends Car {
+	check() {}
+	tension() {}
+}
+class Toyota extends Car {
+	check() {}
+	tension() {}
+}
+class Ford extends Car{
+	check() {}
+	tension() {}
+
+} 400 classes 
+
+ 
+c = Car.getInstance('bmw')
+c.check(); 
+c.tension(); 
+((BMW)c).abs(); 
+c = Car.getIntance('maruti')
+c.check(); 
+c.tension(); 
+
+
+
+
+
+
+
+
+
+70+ 
+
+$1 = INR 70 
+$1 = Pound 0.678
+$1 = S$ xxx 
+$1 = Yen xxxx 
+
+Google / Yahoo 
+
+
+
+
+e = new Employee(); 
+e.name = "Rishab"
+e.company = "Sapient"
+e.city = "Delhi"
+
+e1 = e.clone(); 
+e1.name = "Deepesh"
+
+
+
+
+BESCOM -> 220v -> Mobile Charge (Adapter) -> 12V
+
+
+class Employee{
+	work() {}
+	timesheet(){}
+	sprints(){}
+	.... lot more functions 
+}
+
+class PM {
+	// i can only override which i need
+	sprints(){} 
+}
+
+
+Hyundai -> i10, i20, creta, venue, elantra etc 
+
+Color -> Blue, Black, White, Gray etc 
+
+
+
+Marriage (Bharth Band )
+	Backdrop - White 
+	Red Carpet 
+	sweets (Bengali)
+	Baraat 
+
+3AM -> market get all the vegetable, start preparing and serve 
+help -> alternative - Marriage Oraganizer 
+
+
+Car 
+	- ford, toyota, bmw, mercedes, maruti 
+
+SUV
+	- endeveour, eco-sport, fortuner, urban-cruiser 
+
+
+fordEndeveour() {}
+fordEcoSport() {}
+bmwX1(){}
+bmwX2(){}
+bmwX3(){}
+bmwX4(){}
+bmwX5(){}
+bmwX6(){}
+bmwX7(){}
+ 
+Sedan
+
+Hatchback
+
+MUV 
+
+
+
+
+
+
+Sturctural Pattern 
+Behavioural Pattern 
+
+
+
+
+
+
+
+
+
+
+

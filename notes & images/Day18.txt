@@ -1,0 +1,269 @@
+let x = 10; 
+let y = x; 
+
+let arr1 = [10]; 
+let arr2 = arr1; 
+
+
+let arr2 = [...arr1]; 
+
+rest and spread operator
+
+let obj1 = {
+	name:"hello"
+}
+
+let obj2 = {...obj1}; 
+
+
+function fn(eletronics, ...parts) {
+
+}
+
+what are closures 
+
+
+function fnCl() {
+	return "hi"
+}
+
+
+function fnCl( val1) {
+	let val = 100; 
+	return function() {
+		return function(val2) {
+			return val + val1+ val2; 
+		}
+	}
+}
+
+In Javascript functions are call first class citizens 
+we can use functions to call other functions 
+
+currying 
+let fnClRef = fnCl(100)()(100);
+
+
+with(Math) {
+	PI
+}
+
+diff call(atomic value pass) / apply  (array)
+
+Singleton 
+
+
+class Car {
+	getInstance(type) {
+		switch(type) {
+			case "maruti": 
+				return new Maruti(); 
+			case "bmw":
+				return new BMW()
+		}
+	}
+}
+class BMW extends Car {}
+class Maruti extends Car{}
+  
+
+let obj1 = {}
+let obj2 = {}
+
+ 
+ 
+let fnCl = (val1) => {
+	let val = 100;
+	return () =>  (val2) => val1+val2+val;
+	
+}
+
+const fn = (val1)=> {
+	let val = 100; 
+	return ()=>(val2)=>  val + val1+ val2; 	
+}
+
+
+
+fuction fn() {}
+let fn = function() {}
+let fn1 = () => {} // you cannot refer this 
+
+
+diff between function and arrow function 
+call, apply, bind -> creates a new object temp 
+
+
+
+if it is object style then no arrow 
+
+
+let person = {
+    name : "Navdeep",
+    get getName() {
+        return this.name
+    }, 
+	setName: function(name) {
+	
+	}
+}
+
+let p = {
+    name  : "Gautam"
+}
+
+person.setName.call(p.name)
+
+
+
+let p = {
+    name  : "Gautam"
+}
+
+
+log(p.name!=undefined)
+log(name in p)
+
+instanceOf 
+
+
+
+
+index.html
+	pages
+		client-login.html
+		trainer-login.html
+		client-registration.html
+		trainer-registration.html 
+	css
+		bootstrap 
+		fontawesome 
+		styles.css 
+	script
+		login.js 
+			document.querySelector("#somebtn").addEventListener("click", loginValidate )
+			function loginValidat() {
+				// core business logic 
+				// open the URL 
+				// get the data 
+				// return (true/ false)
+			}
+	tests
+		login.spec.js 
+			test("for valid case ", () => {
+				// pass value 
+				expect(true).toBe(object)
+			})
+package.json 
+webpack 
+
+
+
+
+Bootstrap - Twitter 
+	.css / .min.css  
+		you can download in local system
+		you can CDN 
+	.js < jQuery 
+MaterialUI 
+
+
+
+
+
+col-sm
+
+col-sm-4
+col-sm-5
+
+col-md
+	col-md-4
+	
+col-xl
+col-xxl 
+
+
+
+a.com
+	bootstrap 
+	
+b.com 
+	bootstrap 
+
+
+
+https://dmitripavlutin.com/check-if-object-has-property-javascript/
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			first content 
+		</div>
+		<div class="col-md-4">
+			second content 
+		</div>
+		<div class="col-md-4">
+			thrid content 
+		</div>
+	</div>
+</div>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<div class="container">
+	<div class="col-md-3 min-height">
+		on left side 
+	</div>
+	<div class="col">
+		<div class="row">
+			<div class="container">
+				asdfasdfasdf
+			</div>
+		</div>
+		<div class="row">
+			<div class="container">
+				button
+				input:text 
+			</div>
+		</div>
+	</div>	
+</div> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
