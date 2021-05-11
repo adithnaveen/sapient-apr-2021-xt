@@ -1,0 +1,158 @@
+Team-1 
+	Test cases are written  except fetch 
+	Integrated ? 
+	Business Logic Function (client & trainer is done) 
+	class based approach - no 
+
+	SASS not done 
+	
+Team-2 
+	Test cases are done partially 
+	modularized - done 
+	business logic - done 
+ 
+	SASS not done 
+	
+	
+Team-3 
+	Business logic done 
+	Test cases remaining 
+	User list cosmetic changes + test cases 
+	modularization done 
+	
+	SASS - to be done 
+	 
+	 https://tools.publicis.sapient.com/bitbucket/projects/PSIXT/repos/project-03/browse?at=refs%2Fheads%2Ffeature%2FPSIXT-144-to-login-sign-in-as-trainer
+	
+	
+Team-4 
+	Trainer + client login - BL done 
+	need to write test cases 
+	
+	SASS - to be done 
+	
+	
+	
+
+
+
+Library 
+	jQuery 
+	ReactJs 
+		.js 
+
+	mocha 
+	jest 
+	jasmine 
+	
+
+Framework 
+	Angular
+		
+	VueJS 
+
+
+
+
+transform 
+-web-transform
+-ms-transoform 
+-moz-xyz 
+
+
+$( "p" ).addClass( "myClass yourClass" );
+
+
+
+$( "p" ).removeClass( "myClass noClass" ).addClass( "yourClass" );
+
+.selected {
+    color: blue;
+  }
+  
+$( "p[5]" ).addClass( "selected" );
+
+
+$( ".inner" ).append( "<p>Test</p>" );
+	
+	
+	
+let existingElement = document.getElementsByClassName(".inner"); 
+let element = document.createElement("p"); 
+let elementText = document.createTextNode("Test")
+element.append(elementText)
+existingElement.apen(element)
+	
+	
+$( ".inner" ).prepend( "<p>Test</p>" );
+
+
+
+$( document )
+	.ajaxSend(function( event, jqxhr, settings ) {
+  if ( settings.url == "http://somelink.com" ) {
+    $( ".log" ).text( "Triggered ajaxSend handler." );
+  }
+})
+.ajaxComplete(function() {
+
+ $( ".log" ).text( "Triggered complete handler." );
+}) .ajaxError(function() {
+  $( ".log" ).text( "Triggered ajaxError handler." );
+});
+
+
+
+
+
+
+
+
+
+
+$( "#inner" ).append( "<p>Test</p>" );
+
+
+background-color 
+backgroundColor 
+	
+
+
+$("somediv").animate({}, <timeout>, () => {
+	$("somediv").animate({}, <timeout>, () => {
+		$("somediv").animate({}, <timeout>)
+	})
+})
+
+
+
+gt lt le ge eq 
+	
+	
+	
+	
+	
+let x = "hi"	
+
+document.write("my name is " + hi)
+document.write(`my name is ${hi}`)
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
