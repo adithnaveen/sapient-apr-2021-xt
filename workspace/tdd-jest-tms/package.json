@@ -1,0 +1,23 @@
+{
+  "name": "tdd-jest-tms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch --force-exit --detectOpenHandles",
+    "build": "webpack ./controller/login.js --mode=development --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "jest-fetch-mock": "^3.0.3",
+    "webpack": "^5.37.0",
+    "webpack-cli": "^4.7.0"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "node-quill-converter": "^0.3.3"
+  }
+}
