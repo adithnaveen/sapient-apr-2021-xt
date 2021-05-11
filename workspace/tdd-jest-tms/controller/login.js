@@ -12,11 +12,13 @@ const loginUserController = async (event) => {
     obj.password =document.querySelector("#password").value; 
     obj.pic="/pic.jpg"
 
-    console.log(obj);
     let result = await loginClient(obj); 
-    
-    console.log("result " , result)
-    return false; 
+    if(result.message!==null) {
+        console.log("pass")
+         location.href = "../html/client-dashboard.html";
+    }else {
+        console.log("Fail...");
+    }
 }
 
 initApp()

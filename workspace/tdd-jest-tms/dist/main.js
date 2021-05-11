@@ -15,7 +15,7 @@
   \*****************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("const {loginClient} = __webpack_require__(/*! ../scripts/client-login */ \"./scripts/client-login.js\")\n \nconst initApp =() => {\n    console.log(\"in the controller... \");\n    document.querySelector(\"#loginUser\").addEventListener(\"click\", loginUserController); \n}\n\nconst loginUserController = async (event) => {\n    event.preventDefault()\n    let obj = {}; \n    obj.email=document.querySelector(\"#email\").value; \n    obj.password =document.querySelector(\"#password\").value; \n    obj.pic=\"/pic.jpg\"\n\n    console.log(obj);\n    let result = await loginClient(obj); \n    \n    console.log(\"result \" , result)\n    return false; \n}\n\ninitApp()\n\n//# sourceURL=webpack://tdd-jest-tms/./controller/login.js?");
+eval("const {loginClient} = __webpack_require__(/*! ../scripts/client-login */ \"./scripts/client-login.js\")\n \nconst initApp =() => {\n    console.log(\"in the controller... \");\n    document.querySelector(\"#loginUser\").addEventListener(\"click\", loginUserController); \n}\n\nconst loginUserController = async (event) => {\n    event.preventDefault()\n    let obj = {}; \n    obj.email=document.querySelector(\"#email\").value; \n    obj.password =document.querySelector(\"#password\").value; \n    obj.pic=\"/pic.jpg\"\n\n    let result = await loginClient(obj); \n    if(result.message!==null) {\n        console.log(\"pass\")\n         location.href = \"../html/client-dashboard.html\";\n    }else {\n        console.log(\"Fail...\");\n    }\n}\n\ninitApp()\n\n//# sourceURL=webpack://tdd-jest-tms/./controller/login.js?");
 
 /***/ }),
 
