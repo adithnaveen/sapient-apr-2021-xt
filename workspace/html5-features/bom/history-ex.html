@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+        function fnGoBackWithBack() {
+            history.back();
+        }
+        function fnGoBackWithGo() {
+            history.go(-1);
+        }
+        function fnGoBackWithGo2Levels() {
+            history.go(-2);
+        }
+
+        function fnGoForward() {
+            history.forward()
+        }
+        console.log("History Length ", history.length);
+    </script>
+</head>
+
+<body>
+    <h2>working with history</h2>
+    <button onclick="fnGoBackWithBack()">fnGoBackWithBack</button>
+    <button onclick="fnGoBackWithGo()">fnGoBackWithGo</button>
+    <button onclick="fnGoBackWithGo2Levels()">fnGoBackWithGo2Levels</button>
+    <button onclick="fnGoForward()">fnGoForward</button>
+
+    <hr>
+    <a href="./mime-types.html">Goto Mime Types</a>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+Team 1 
+	Tab indexed - good 
+	password and confirm - should have proper coloring 
+	gutter margin in login screen is to be taken care 
+	client dashboard should have sign out
+	login button to be there on home page 
+	alignment of user list 
+	in userlist when you click on next and previous its kind of jerk 
+	
+Team 2 
+	there is some space around signup trainer 
+	the fonts are difficult to read when valiating in trainer signup 
+	we need to keep the token in cookie 
+	why are we keeping in window scope 
+	in util.js instead of let we can use const 
+	preferably dont keep it in window scope 
+	check with himanshu either to keep it in window scope 
+	user list some more alignment (left / justify)
+	dont have delete and edit icons in user list 
+	highlight in which page you are 
+	have footer in dashboard - client 
+	
+Team 3 
+	in dashboard on left side the fonts can be little more bigger 
+	take off actions 
+	when role N/A then make is "Not Applicaple"
+	
+
+
+Team 4 
+	text box is become very big v/s the text which occupies 
+	use es6 where evern possible 
+	preferably use div instead of table 
+	dont use short variable names like x, y , z 
+
+
+
+
+
+HTML 
+HTML 5 
+
+drag and drop 
+geo location 
+offline - online 
+web workers - move out of window scope and run else where 
+
+
+small amount of data kept which i've to take an ack from end user 
++ then i'll keep large data 
+
+Cookies - text - 4kb 
+storage - local / session 
+
+Window (BOM)
+	History - go, back, forward 
+
+push and pop state 
+
+JavaScript 
+	- Video / Audio 
+	
+Audible 
+English US / English UK / None 
+VTT - Video Text Tracks 
+SRF
+
+
+http://localhost:8080/myform.html?name=kumar&city=bengaluru
+
+
+
+http://localhost:5500/bom/history-ex.html
+http://localhost:5500/bom/
+
+http://localhost:5500/bom/history-ex.html?page-1
+
+
+
+ 
+
+
+
+https://mail.google.com/mail/u/0/#inbox
+https://mail.google.com/mail/u/0/#starred
+
+# hash routing 
+/ path routing 
+
+
+
+
+self invoking functions 
+(function hi(val){})("hi")
+
+
+hello.js
+--------------------- 
+some business logic 
+
+
+function one () {}
+
+
+obj = new one();
+obj1 = new Workder("hello.js"); 
+
+
+
+ 
+
+
+
