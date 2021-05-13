@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h1>Working with Cookie, Local Storage & Session Storage</h1>
+    <a href="./example1.html">Check Cookied Other Page </a>
+    <script type="text/javascript">
+        console.log(document.cookie);
+        document.cookie = "company=publicis sapient?%"
+        console.log(document.cookie);
+
+        encodeURIComponent()
+
+        let name = "company"
+        // let value = "india?%"
+        let value = "india"
+
+        document.cookie = encodeURIComponent(name) + "=" + encodeURIComponent(value)
+
+        date = new Date();
+        date.setHours(24, 0, 0, 0)
+        console.log(date);
+
+        // 4kb 
+        document.cookie = encodeURIComponent(name) + "=" +
+            encodeURIComponent(value) + ";expires=" + date;
+
+
+        /////////////////////Local Storage ////////////////////////////////////////
+
+        // key is unique and it will be overwritten 
+        localStorage.setItem("users", "Harsh,Rishab,Vikash")
+        localStorage.setItem("emps", "Priyanka,Hinduja,Gautam")
+        localStorage.setItem("customers", "Deepesh,Navdeep,Aishwarya")
+
+        let users = localStorage.getItem("users")
+        console.log(`from Localstorage  ${users}`);
+
+        for (let key in localStorage) {
+            // console.log(key);
+            if (!localStorage.hasOwnProperty(key)) {
+                continue
+            }
+            console.log(`${key} :${localStorage.getItem(key)}`);
+        }
+
+        console.log("------------------------------");
+
+        let myobj = { post: 1, author: "Kumar", message: "Some message goes here" }
+
+        // when you are storing the object make sure to do stringify 
+        // the value will become [object Object]
+        localStorage.setItem("post", myobj)
+        localStorage.setItem("post1", JSON.stringify(myobj))
+
+        let retPost = localStorage.getItem("post1");
+
+        console.log(retPost);
+        console.log(JSON.parse(retPost));
+
+        sessionStorage.setItem("newpost", JSON.stringify(myobj))
+
+
+    </script>
+</body>
+
+</html>
