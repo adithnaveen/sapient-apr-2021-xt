@@ -16,4 +16,5 @@ let myFavColor = COLOR.BLUE
 
 console.log(myFavColor);
 
+class Hello {}
 

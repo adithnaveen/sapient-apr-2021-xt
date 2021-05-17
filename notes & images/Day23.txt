@@ -1,0 +1,99 @@
+fetch(url)
+	.then(resp => resp.json())
+	.then(rep => {
+		if(rep ==="user not successful") {
+			window.location.href="error.html"
+		}else {
+	window.location.href="somepage.html"})
+
+	.catch(err => { window.location.href="error.html"
+		console.error(err)})
+		 
+		 
+fetch(url)
+	.then(resp => resp.json())
+	.then(rep => {render (10 - 20 )}) 
+	
+	
+
+HTML 5 
+	Drag & Drop - 
+
+	<img dragable="true" >
+
+	Data storage 
+		cookies 
+		localstorage 
+		session storage 
+		indexDB 
+
+
+	Audio &  Video 
+		Multiple sources 
+	GeoLocation 
+	
+
+
+
+
+
+
+
+
+<form action="#">
+	<input type="text" name="name" /> 
+</form>
+
+
+class RequestParam {
+	public void doGet(HttpServletRequest req, HttpServletResponse res) {
+		String name = req.getParameter("name")
+	}
+}
+
+
+
+name=ps;
+expires=new Date()+24;
+domain="yahoo.com"
+
+
+
+
+
+
+
+
+
+
+let x = 10; 
+let x = "hi";
+
+let mystring:string = "hello"
+
+int x = 10; 
+int x = "hi"; 
+
+extends 
+
+class First {}
+class Second extends First {}
+
+abstract class Shape {
+	area();
+}
+
+interface 
+
+class Rectangle extends Shape {
+	area(){
+		log("l x b ")
+	}
+
+}
+
+
+static 
+enums 
+ 
+

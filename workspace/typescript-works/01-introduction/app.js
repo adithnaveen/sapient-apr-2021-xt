@@ -1,4 +1,4 @@
-"use strict";
+// $ tsc --build tsconfig.json
 let mystring = "Hello Wolrd";
 console.log(`MyString is : ${mystring}`);
 let numberVar;
@@ -15,3 +15,5 @@ var COLOR;
 })(COLOR || (COLOR = {}));
 let myFavColor = COLOR.BLUE;
 console.log(myFavColor);
+class Hello {
+}
