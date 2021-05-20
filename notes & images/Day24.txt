@@ -1,0 +1,106 @@
+1. TypeScript 
+2. With Project Update 
+3. Jira Stories 
+	Project 
+	Tech Stack 
+4. Introduction NodeJS 
+
+
+abstract class Car {
+	public abstract void move(); 
+}
+
+class BMW extends Car {
+	public  void move() {
+		bmw is moving 
+	}
+	public void abs() {
+		all bmw comes with abs
+	}
+}
+class Maruti extends Car {
+	public void move() {]
+		maruti is moving 
+	}
+	public void musicsytem() {
+		all maruti comes with music system 
+	}
+}
+
+class Computer {
+	public void move() {
+		computer is moving 
+	}
+}
+
+class DriveCar {
+	public static void drive(Car car) {
+		car.move();
+		if(car instanceof BMW) {
+			car.abs();
+		}else if(car instanceof Maruti){
+			car.musicsystem();
+		}
+	}
+}
+
+
+Car car = new BMW(); 
+DriverCar.drive(car); 
+
+car = new Maruti(); 
+DriverCar.drive(car); 
+
+Computer c = new Computer(); 
+DriverCar.drive(c); 
+
+
+
+DuckTyping 
+
+
+let x = 10; 
+let x:number = 10; 
+
+
+TypeInference - type checking 
+
+
+
+
+
+
+
+
+
+
+
+
+stop saying will do it after demo 
+you are already in the demo 
+stop copying the code from internet 
+remove hard coded values 
+stop chatting on teams or turn off your teams notification 
+where is your H1, i'm not sure if there is H1 
+we dont know why we have to use nav 
+indentation ????? 
+accessability practices 
+try avoiding alert 
+team 4 color combination is not matching 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+

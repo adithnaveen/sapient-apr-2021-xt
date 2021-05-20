@@ -1,3 +1,4 @@
+// https://www.htmlgoodies.com/javascript/duck-typing-in-javascript/
 let duck = {
     color: "white",
     appearence: "feathers",

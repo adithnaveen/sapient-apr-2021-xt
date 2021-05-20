@@ -27,18 +27,10 @@ var TodoState1;
     TodoState1[TodoState1["COMPLETED"] = 3] = "COMPLETED";
 })(TodoState1 || (TodoState1 = {}));
 class TodoService1 {
-    // we never used private variables  
-    // now private variables are allowed 
-    // and the member function of the class can only 
-    // access the variable 
-    // version 1 
-    // private todos : Todo1 []; 
-    // constructor(todos : Todo1 []) {
-    //     this.todos  = todos; 
-    // }
     // version 2 
     constructor(todos) {
         this.todos = todos;
+        this.dummy = 100;
         this.todos = todos;
     }
     add(todo) {
@@ -46,7 +38,9 @@ class TodoService1 {
         return todo;
     }
     delete(index) {
-        this.todos.splice(index, 1);
+        console.log("Deleting @ index : ", index);
+        this.display(this.todos[index]);
+        this.todos = this.todos.splice(index, 1);
     }
     getAll() {
         return this.todos;
@@ -54,7 +48,20 @@ class TodoService1 {
     getById(index) {
         return this.todos[index];
     }
+    display(todo) {
+        console.log("NAME:", todo.name, ", COMPLETED: ", todo.completed);
+    }
 }
+// we never used private variables  
+// now private variables are allowed 
+// and the member function of the class can only 
+// access the variable 
+// version 1 
+// private todos : Todo1 []; 
+// constructor(todos : Todo1 []) {
+//     this.todos  = todos; 
+// }
+TodoService1.todoId = 0;
 let myTodos = new TodoService1([]);
 console.log(`All Todos : ${myTodos.getAll()}`);
 let todo1 = {
@@ -67,8 +74,26 @@ let todo2 = {
     state: TodoState1.ACTIVE,
     completed: false
 };
+// adding todo 
 myTodos.add(todo1);
 myTodos.add(todo2);
-console.log(`All Todos : ${myTodos.getAll()}`);
+// displaying all todo 
+console.log("------------------- Display all --------------------");
 myTodos.getAll().forEach(t => console.log("Name:", t.name, ", Completed: ", t.completed));
 console.log(myTodos.getAll().length);
+// deleting todo 
+myTodos.delete(1);
+// displaying all todo 
+console.log("------------------- Display all --------------------");
+myTodos.getAll().forEach(t => console.log("Name:", t.name, ", Completed: ", t.completed));
+console.log(myTodos.getAll().length);
+myTodos.getAll().forEach(t => myTodos.display(t));
+// working with static 
+console.log("Static value is ", TodoService1.todoId);
+// this will not work 
+// console.log("printing dummy value  " , TodoService1.dummy); 
+let todoser1 = new TodoService1([]);
+console.log("todoser1 -> dummy value is : ", todoser1.dummy);
+// console.log("Access static value with instance var : ", todoser1.todoId);
+let todoser2 = new TodoService1([]);
+console.log("todoser2 -> dummy value is : ", todoser2.dummy);

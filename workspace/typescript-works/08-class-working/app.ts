@@ -40,6 +40,7 @@ interface ITodoService1 {
     delete(index : number) : void; 
     getAll() : Todo1 []; 
     getById(index: number) : Todo1; 
+    display(todo: Todo1 ) : void; 
 }
 
 class TodoService1 implements ITodoService1 {
@@ -54,18 +55,22 @@ class TodoService1 implements ITodoService1 {
     //     this.todos  = todos; 
     // }
     
+
+    static todoId : number = 0;
+    dummy:number = 100; 
+
     // version 2 
     constructor(private todos : Todo1 []){
         this.todos = todos; 
     }
-
-
-    add(todo:Todo1) : Todo1 {
+    add(todo:Todo1) : Todo1 {    
         this.todos.unshift(todo)
         return todo; 
     }
     delete(index : number) : void {
-        this.todos.splice(index,1)
+        console.log("Deleting @ index : ", index)
+        this.display(this.todos[index])
+        this.todos = this.todos.splice(index,1)
     }
  
     getAll() : Todo1 [] {
@@ -74,6 +79,10 @@ class TodoService1 implements ITodoService1 {
  
     getById(index: number) : Todo1 {
         return this.todos[index]; 
+    }
+
+    display(todo: Todo1) : void {
+        console.log("NAME:", todo.name , ", COMPLETED: ", todo.completed)
     }
 }
 
@@ -91,17 +100,38 @@ let todo2 : Todo1 = {
     state : TodoState1.ACTIVE, 
     completed:false
 }
+
+// adding todo 
 myTodos.add(todo1)
 myTodos.add(todo2)
-console.log(`All Todos : ${myTodos.getAll()}`); 
+
+// displaying all todo 
+console.log("------------------- Display all --------------------");
+
 myTodos.getAll().forEach(t => console.log("Name:", t.name , ", Completed: ", t.completed))
 console.log(myTodos.getAll().length)
 
+// deleting todo 
+myTodos.delete(1)
+
+// displaying all todo 
+console.log("------------------- Display all --------------------");
+
+myTodos.getAll().forEach(t => console.log("Name:", t.name , ", Completed: ", t.completed))
+console.log(myTodos.getAll().length)
+myTodos.getAll().forEach(t => myTodos.display(t))
 
 
 
 
 
+// working with static 
+console.log("Static value is " , TodoService1.todoId); 
+// this will not work 
+// console.log("printing dummy value  " , TodoService1.dummy); 
+let todoser1 = new TodoService1([]); 
+console.log("todoser1 -> dummy value is : " , todoser1.dummy);
+// console.log("Access static value with instance var : ", todoser1.todoId);
 
-
-
+let todoser2 = new TodoService1([]); 
+console.log("todoser2 -> dummy value is : " , todoser2.dummy);

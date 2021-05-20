@@ -1,0 +1,102 @@
+ayush - cookie retriving problem 
+manish 
+akhilesh - have to work on retriving cookie 
+gautam 
+vikash 
+
+
+done 
+harsh
+rishbh 
+
+
+
+TS 
+
+
+
+
+class Account {
+	constructor(private accountId:number, balance=0:number, name:string) {
+		this.balance = balance; 
+		this.name = name; 
+	}
+	static counter: number = 100; 
+	
+	static getNumber() {
+	  return counter++; 
+	}
+	
+}
+
+
+let a1 = new Account(Account.getNumber, 1000, "Harry");  
+let a2 = new Account(Account.getNumber, 2000, "Barry"); 
+
+
+
+
+NodeJS - Web Server 
+
+Application Server - jBoss, glassfish, weblogic, webspere etc 
+	- RAW Request,  fuel station, ATM , HTTP + clustering - clusting (vertical scaling)
+
+Web Server - tomcat, netty, nodejs, jetty, iis, django 
+	???? - Mobile / Computer(computer / laptop) - http (horizontal scaling) - Orchestrating  - farget, docker swarm, kubernetees, rancher 
+
+
+
+(tomcat, netty,  jetty, iis, django) vs (nodejs) - v8 
+
+
+(nodejs) - no multi threading - single threaded application 
+Harsh -> Manish -> Navdeep -> 
+
+
+Cryto Algorithms (client + server)
+
+
+
+TDD 
+jsunit, qunit, jasmine - jest 
+lint - JSLINT, ESLINT  - kt (Vikash/Ayush)
+
+
+++ , -- 
+
+let arr =[12,3,6,8,10,55]; 
+// dont do this 
+for(let x = 0;x < arr.length;x++) {
+	log(arr[x])
+}
+
+Arrays.objects(arr).forEach(val => {console.log(val)})
+
+
+7
+ 
+4 - read  
+2 - write 
+1 - execute 
+
+7 - 
+6 - 
+3 - 
+
+1 - 7
+
+
+- rw- r-- r--
+  owner 
+    group 
+	      other 
+
+
+644 
+
+765 
+
+
+
+
+
