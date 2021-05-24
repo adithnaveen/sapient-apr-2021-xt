@@ -4,12 +4,12 @@ import React from 'react'
 
 import './AppFooter.css';
 
-const AppFooter = ({ year, webAddress }) => {
+const AppFooter = ({ year, webAddress, company }) => {
     return (
         <div className="app-footer">
             <hr />
             <p >App Footer</p>
-            <p>Copy {year}, {webAddress} </p>
+            <p>Copy {year}, {webAddress}, {company} </p>
         </div>
     );
 }

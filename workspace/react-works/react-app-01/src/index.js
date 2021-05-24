@@ -10,6 +10,7 @@ ReactDOM.render(<App
     message="Hello How are you doing" />, document.querySelector("#root"));
 */ 
 
-import App from './01-basics';
+// import App from './01-basics';
+import App from './02-event-handler';
 
 ReactDOM.render(<App />, document.querySelector("#root"));
