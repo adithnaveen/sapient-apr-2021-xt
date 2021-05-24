@@ -2,10 +2,11 @@ import React, { Component } from 'react'
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
+
+import Btn from './Btn';
+
 // stateless component 
-const Btn = ({ caption, handler }) => (
-    <button className="btn btn-primary" onClick={handler}> {caption} </button>
-)
+
 const Btn1 = (props) => (
     <button className="btn btn-warning" onClick={props.handler}> {props.caption} </button>
 )
