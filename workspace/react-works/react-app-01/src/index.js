@@ -13,6 +13,7 @@ ReactDOM.render(<App
 
 // import App from './01-basics';
 // import App from './02-event-handler';
-import App from './03-unctrl-ctrl/index';
+// import App from './03-unctrl-ctrl/index';
+import App from './03-unctrl-ctrl/index-ctrl';
 
 ReactDOM.render(<App />, document.querySelector("#root"));
