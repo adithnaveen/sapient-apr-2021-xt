@@ -13,7 +13,8 @@ class EmployeeForm extends Component {
             name: "Name Is required",
             email: "Email is required",
             phone: "Phone is required"
-        }
+        },
+        errorMessages: null
     }
 
     // on change event 
@@ -76,13 +77,36 @@ class EmployeeForm extends Component {
         this.setState({ [name]: value, formError })
     }
 
+    validateForm = (formError) => {
+        let valid = true;
+        Object.values(formError).forEach((err) => valid = valid && err.length === 0);
+        return valid;
+    }
+
+    submitHandler = (event) => {
+        console.log("Form Submitted");
+
+        event.preventDefault();
+        let { formError } = this.state;
+        if (this.validateForm(formError)) {
+            alert("Form Submitted... ");
+        } else {
+            let errorMessages = Object.values(formError).
+                map((err, idx) => err.length === 0
+                    ? null : <li key={idx}>{err}</li>)
+
+            this.setState({ errorMessages })
+        }
+    }
+
     render() {
         return (
             <div className="container">
                 <div className="row">
                     <div className="col">
-                        <h3 className="alert alert-danger">Controlled Component Demo</h3>
-                        <form>
+                        <h3 className="alert alert-danger">Controlled Component </h3>
+                        <form className="form-group" onSubmit={this.submitHandler}>
+
                             <div className="form-group row">
                                 <label htmlFor="name" className="control-label col-md-4">Employee Name</label>
                                 <div className="col-md-8">
@@ -91,6 +115,7 @@ class EmployeeForm extends Component {
                                         value={this.state.name} />
                                 </div>
                             </div>
+
                             <div className="form-group row">
                                 <label htmlFor="email" className="control-label col-md-4">Employee Email</label>
                                 <div className="col-md-8">
@@ -118,11 +143,14 @@ class EmployeeForm extends Component {
                             <button className="btn btn-primary">Save Employee</button>
                         </form>
                     </div>
-                    <hr />
+
                     <div className="col">
                         <h2>Current State</h2>
                         <pre>{JSON.stringify(this.state, null, 3)}</pre>
                     </div>
+                    <ul>
+                        {this.state.errorMessages}
+                    </ul>
                 </div>
             </div>
         );

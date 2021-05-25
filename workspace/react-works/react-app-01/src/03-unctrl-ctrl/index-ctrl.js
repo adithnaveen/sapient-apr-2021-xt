@@ -8,10 +8,9 @@ class App extends Component {
         return (
             <div className="container">
                 <h1 className="alert alert-info">Controlled Component Demo</h1>
-                
-                   
-                        <EmployeeForm /> 
-                     
+                <div className="row">
+                    <EmployeeForm />
+                </div>
             </div>
         );
     }
