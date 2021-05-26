@@ -16,6 +16,7 @@ ReactDOM.render(<App
 // import App from './03-unctrl-ctrl/index';
 // import App from './03-unctrl-ctrl/index-ctrl';
 // import App from './04-life-cycle';
-import App from './05-contact-app';
+// import App from './05-contact-app';
+import App from './06-hoc'
 
 ReactDOM.render(<App />, document.querySelector("#root"));
