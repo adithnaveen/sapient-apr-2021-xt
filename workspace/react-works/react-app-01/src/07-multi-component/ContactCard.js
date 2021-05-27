@@ -8,7 +8,7 @@ const ContactCard = ({ contact, deleteContact }) => (
             </div>
             <div className="col-md-7">
                 <div className="card-body">
-                    <h4 className="card-title">{contact.name}</h4>
+                    <h4 className="card-title">{contact.sex ==='Male'?"Mr. " :"Ms/Mrs. "}{contact.name}</h4>
                     <h4 className="card-text">{contact.email}</h4>
                     <h4 className="card-text">{contact.phone}</h4>
                     

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Component } from 'react'
+
 import ReactDOM from 'react-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -18,6 +19,7 @@ ReactDOM.render(<App
 // import App from './04-life-cycle';
 // import App from './05-contact-app';
 // import App from './06-hoc'
-import App from './07-multi-component';
-
+// import App from './07-multi-component';
+// import App from './08-virtual-dom';
+import App from './09-hooks';
 ReactDOM.render(<App />, document.querySelector("#root"));
