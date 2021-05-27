@@ -1,0 +1,104 @@
+function based component 
+stateless 
+---------------------------------------
+const MyComponent = () => (<div></div>)
+
+class based component or 
+statefull component 
+---------------------------------------
+class MyComponent extends Component {
+	state = {}
+	render() {
+		console.log(this.refs.email)
+		return <div></div>
+	}
+}
+
+create react app without create react app 
+working with state 
+events 
+installing external lib 
+design pattern - atomic modular structuring 
+
+
+
+<form>
+	<input type="text" name="email" /> 
+	<button onclick="fn()">submit</button>
+</form>
+
+<form onsubmit="fn()">
+	<input type="text" name="email" /> 
+	<button >submit</button>
+</form>
+
+
+document.myform.email.value 
+this.refs.email.value 
+
+<form name="myform">
+	<input type="text" ref="email" /> 
+	<button id="btn">submit</button>
+</form>
+
+
+state 
+
+<form name="myform">
+	<input type="text" name="email" value={this.state.email} onchange={this.handleText} /> 
+	<button id="btn">submit</button>
+</form>
+
+
+1. uncontrolled form - 
+2. controlled form - you map the variable to state 
+
+
+1. function based components are lighter (T/F) - T
+it takes the properties of Object 
+
+2. Class based components are heavier (T/F) - T 
+it takes the properties of Object + Component class 
+	component -> has some methods -> override -> they are called at specific time + to get the data from external resource (restapi)
+	
+	onload 
+	ready 
+	onunload 
+
+
+Mouting 
+constructor()
+static getDerivedStateFromProps()
+render()
+componentDidMount()
+
+
+
+https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
+
+
+
+1. show working of life cycle components 
+2. virtual DOM 
+3. we should hit the end point and get the data 
+
+
+
+
+
+
+<img src="https://randomuser.me/api/portraits/men/8.jpg" data-int="8" data-gender="men" class=" come_in">
+
+
+
+
+
+
+
+
+
+
+
+
+

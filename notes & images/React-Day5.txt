@@ -1,0 +1,288 @@
+
+
+ 
+
+scaling react components 
+
+HOC 
+jQuery, axios - integrating with other libraries 
+-- instead of fetch 
+styled components 
+react property and validation 
+error boundries - 
+
+<ErrorBoundry>
+<App /> 
+</ErrorBoundry>
+
+Hooks 
+lazy loading 
+
+
+
+http://localhost:3000 -> application should load 
+
+
+side car -> componentDidMount 
+
+HOC -> props.contacts 
+
+("contacts")(Loading)(list)
+("products")(Loading)(list)
+("employees")(Loading)(list)
+
+
+
+.myclass{
+	border-shadow:inline;
+	text-transform:uppercase;
+}
+
+<button class="btn btn-primary myclass"></button>
+
+
+
+const Button = styled.a`
+  /* This renders the buttons above... Edit me! */
+  display: inline-block;
+  border-radius: 3px;
+  padding: 0.5rem 0;
+  margin: 0.5rem 1rem;
+  width: 11rem;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+
+  /* The GitHub button is a primary button
+   * edit this to target it specifically! */
+  ${props => props.primary && css`
+    background: white;
+    color: black;
+  `}
+`
+
+render(
+  <div>
+    <Button
+      href="https://github.com/styled-components/styled-components"
+      target="_blank"
+      rel="noopener"
+      primary
+    >
+      GitHub
+    </Button>
+
+    <Button as={Link} href="/docs">
+      Documentation
+    </Button>
+  </div>
+)
+
+styled.p
+
+const Button = styled.a`
+  
+  display: inline-block;
+  border-radius: 3px;
+  padding: 0.5rem 0;
+  margin: 0.5rem 1rem;
+  width: 11rem;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+
+  /* The GitHub button is a primary button
+   * edit this to target it specifically! */
+  ${props => props.primary && css`
+    background: white;
+    color: black;
+  `}
+`
+
+render(
+  <div>
+    <Button
+      href="https://github.com/styled-components/styled-components"
+      target="_blank"
+      rel="noopener"
+      primary
+    >
+      GitHub
+    </Button>
+
+    <Button as={Link} href="/docs">
+      Documentation
+    </Button>
+  </div>
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var myOldCompStyle = React.createClass({
+	render:function() {
+		return(
+			<div>
+				<h1>This is my old Style Component </h1>
+			</div>
+		)
+	}
+})
+
+---> to class based 
+
+class MyComponent extends Component {
+	state ={}
+	componentDidMount() {
+		this.setState({this.state.var="something"})
+	}
+	render() {
+	
+	this.setState({this.state.varname:"something"}) (wrong )
+		return(
+		<div>
+			<h1>This is my class based component </h1>
+			
+			<button onclick={() => {
+				this.setState({this.state.varname:"something"})
+			}}>click me</button>
+		</div>
+		)
+	}
+}
+
+-----> function based (unfortunatedly does not have life cycle + there is no state  )
+
+function MyNewComponent () {
+	return (
+		<div>
+			<h1>My function based component</h1>
+		</div>
+	)
+}
+
+----> hooks (16.8)
+function MyNewHookComponent () {
+	const [name, setName] = useState("Manish");
+	return (
+		<div>
+			<h1>My function based Hook component</h1>
+		</div>
+	)
+	
+}
+
+
+
+
+state -> setState 
+count -> setCount 
+name -> setName
+
+
+
+
+class MyComponent extends Component {
+	didComponentMount(){}
+	didComponentUpdate(){}
+	didComponentUnmount(){}
+}
+class MyComponent extends PureComponent {
+	didComponentMount(){}
+	didComponentUnmount(){}
+}
+
+sideCar 
+
+
+
+
+
+
+import React, { useState, useEffect } from 'react';
+
+function Example() {
+  const [count, setCount] = useState(0);
+  const [name, setName] = useSate("Manish"); 
+  // Similar to componentDidMount and componentDidUpdate:
+  useEffect(() => {
+    // Update the document title using the browser API
+    document.title = `You clicked ${count} times`;
+  }, ['count']);
+  
+  
+  useEffect(() => {
+    // Update the document title using the browser API
+    document.title = `You clicked ${count} times`;
+  }, ['name']);
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+	  
+      <button onClick={() => setName("Manish Kumar")}>
+        Click me
+      </button>
+    </div>
+  );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

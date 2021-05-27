@@ -1,0 +1,102 @@
+React Day 2 
+eslint 
+yarn 
+
+---------------------
+
+
+npx create-react-app myapp 
+
+
+<style>
+body {
+	font-family:something
+}
+
+</style>
+
+
+
+
+steps for create react app without create-react-app 
+
+1. npm init -y 
+2. npm i react react-dom 
+3. npm i webpack webpack-cli webpack-dev-server --save-dev
+4. npm i css-loader style-loader --save-dev 
+5. npm i babel-loader @babel/cli @babel/core @babel/preset-env @babel/preset-react --save-dev
+
+
+
+
+
+npm i eslint 
+
+eslint --init 
+
+
+
+npm i yarn -g 
+
+
+
+^7.27.0
+major  . minor . update (weekly )
+
+npm i -> package.json -> package.lock.json 
+yarn install 
+
+
+to enable lint in project add below under scripts 
+
+    "lint": "eslint src/**/*.js"
+
+
+state is the implicity variable available 
+when ever you mutate the variable state the render function is called 
+but dont mutate directly like ++, -- 
+never vern call set state inside render function 
+
+
+1 atom for label 
+1 atom for input type text 
+1 atom for input type radio 
+1 atom for check box 
+
+
+1 molecule for 
+	label + input 
+
+1 molecule for 
+	radio + labels 
+	
+1 molecule for 
+	submit + reset 
+
+firstName, lastName, email 
+
+
+
+
+
+
+
+
+
+
+<Btn caption="hello" handler={this.tfHandler} />
+
+By default, React DOM escapes any values embedded in JSX before rendering them. 
+
+Thus it ensures that you can never inject anything that’s not explicitly written in your application. Everything is converted to a string before being rendered. This helps prevent XSS (cross-site-scripting) attacks.
+
+jQuery / angular / vue 
+
+
+
+
+
+
+
+
+

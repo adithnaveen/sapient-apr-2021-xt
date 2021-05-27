@@ -1,0 +1,16 @@
+{
+  "emps": [
+    {
+      "id": 101,
+      "empname": "kumar"
+    },
+    {
+      "id": 102,
+      "empname": "Harsh"
+    },
+    {
+      "id": 103,
+      "empname": "Rishab"
+    }
+  ]
+}
