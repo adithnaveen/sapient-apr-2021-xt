@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 import ReactDOM from 'react-dom';
 import './App.css';
@@ -21,5 +21,7 @@ ReactDOM.render(<App
 // import App from './06-hoc'
 // import App from './07-multi-component';
 // import App from './08-virtual-dom';
-import App from './09-hooks';
+// import App from './09-hooks';
+import App from './10-lazy';
+
 ReactDOM.render(<App />, document.querySelector("#root"));
