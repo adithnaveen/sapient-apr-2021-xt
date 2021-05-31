@@ -7,9 +7,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.alert {
-  min-height: 500px;
-}
 
 .btn {
   margin-top: 10px;
