@@ -1,6 +1,6 @@
 import { render, screen, getByText } from '@testing-library/react';
-import App from './App';
-
+import CounterApp from '../CounterApp';
+import App from '../App';
 import {configure, shallow} from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
@@ -12,10 +12,10 @@ describe('Counter Testing Application', () => {
     // console.log(wrapper.debug());
   })
 
-  test('should give me counter application text to be found', () => {
+  test('should give me counter application text to be found', async () => {
     const wrapper = render(<App />);
-    const h2Text = wrapper.getByText("Counter Application");
-    expect(h2Text).toBeInTheDocument();
+    const h2Element = await wrapper.findAllByText("Counter Application");
+    expect(h2Element.length).toBe(2);
   })
 
   describe('testing counter application with enzyme', () => {
@@ -23,7 +23,7 @@ describe('Counter Testing Application', () => {
 
     beforeEach(()=> {
 
-      wrapper = shallow(<App />);
+      wrapper = shallow(<CounterApp />);
     })
 
     test('should give me counter application text to be found with shallow', () => {

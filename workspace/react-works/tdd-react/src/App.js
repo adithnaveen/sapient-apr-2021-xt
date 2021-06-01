@@ -1,5 +1,5 @@
 import React from 'react'
-
+import CounterApp from './CounterApp';
 const MyComp = () => {
   return (
     <div>
@@ -9,22 +9,11 @@ const MyComp = () => {
 }
 
 const App = () => {
-  const [count, setCount] = React.useState(0);
+
   return (
     <div className="App">
-      <h2 id="header">Counter Application</h2>
-      <h3 id="counter-value">{count}</h3>
-      <button id="incr-button"
-        onClick={() => {
-          setCount(count + 1)
-        }}
-      >Increment</button>
-
-      <button id="decr-button"
-        onClick={() => {
-          setCount(count - 1)
-        }}
-      >Decrement</button>
+      <h2>Counter Application</h2>
+      <CounterApp />
       <MyComp />
     </div>
   );
