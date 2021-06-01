@@ -1,4 +1,9 @@
-const ContactCard = ({ contact}) => (
+import React from 'react'
+import {connect} from 'react-redux';
+import {deleteContact} from '../actions/contacts-action';
+import {Link} from 'react-router-dom';
+
+const ContactCard = ({ contact, deleteContact}) => (
     <div className="card">
         <div className="row">
           
@@ -8,12 +13,20 @@ const ContactCard = ({ contact}) => (
             </div>
             <div className="col-md-7">
                 <div className="card-body">
-                    <h4 className="card-title">{contact.sex ==='Male'?"Mr. " :"Ms/Mrs. "}{contact.name}</h4>
+                    <h4 className="card-title">
+                    <Link to={"/contact-detail/"+contact.id}>
+                    {contact.gender ==='Male'?"Mr. " :"Ms/Mrs. "}{contact.name}
+                    </Link>
+                    </h4>
                     <h4 className="card-text">{contact.email}</h4>
                     <h4 className="card-text">{contact.phone}</h4>
                     
                 <div className="col-md-1">
-                    <button className="btn btn-link text-danger">X</button>
+                    <button 
+                        onClick ={() => {
+                            deleteContact(contact.id)
+                        }}
+                    className="btn btn-link text-danger">X</button>
                 </div>
 
                 </div>
@@ -21,4 +34,5 @@ const ContactCard = ({ contact}) => (
         </div>
     </div>
 )
-export default ContactCard; 
+ 
+export default connect(null, {deleteContact} )(ContactCard); 
