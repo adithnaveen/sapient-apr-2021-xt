@@ -1,0 +1,52 @@
+class EmpForm extends Component {
+	
+	fnSubmit = () => {
+		document.getElementById("email").value 
+		let email = this.refs.email.value;
+		let pass = this.refs.email.value; 
+	}
+	
+	render() {
+		return(
+			<div>
+				<form onSubmit={this.fnSubmit}>
+				Email <input type="text" ref="email" /> 
+				Password <input type="password" ref="pass" />
+				</form>
+			</div>
+		)
+	}
+}
+
+
+
+
+-------------------------------------------------
+class EmpForm extends Component {
+	state = {
+		email:"", 
+		pass:""
+	}
+	fnSubmit = () => {
+		fetch("url", {method ='POST', body:{this.state}}) 
+	}
+	tfHandler =(evt) => {
+		let {name, value } = evt.target;
+		this.setState({[name]: value})
+	}
+	
+	render() {
+		return(
+			<div>
+				<form onSubmit={this.fnSubmit}>
+				Email <input type="text" name="email" 					onChange={this.tfHandler}
+					 value={this.state.email}/> 
+				Password <input type="password" name="pass"
+					 value={this.state.pass}
+					 onChange={this.tfHandler}
+					 />
+				</form>
+			</div>
+		)
+	}
+}

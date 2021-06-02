@@ -116,23 +116,7 @@ render(
   </div>
 )
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 
@@ -262,7 +246,11 @@ function Example() {
 
 
 
+const x = 10; 
+x= 33; 
 
+const [x, y] = [44, 55]; 
+x = 33; 
 
 
 

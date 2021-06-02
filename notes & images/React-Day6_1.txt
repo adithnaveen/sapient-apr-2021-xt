@@ -1,0 +1,81 @@
+lazy loading 
+router 
+loading - eager loading 
+import A from './A'; - component is invoked 
+import B from './B';
+import C from './C';
+
+http://localhost:3000/
+http://localhost:3000/sample
+
+const Mycomp = () => {
+	return (
+		<div>
+			<A />  -> / 
+			<B />  -> /sample
+			<C />  -> /hi
+		</div>
+	)
+}
+
+https://in.style.yahoo.com/28-high-protein-breakfast-ideas-172900729.html
+
+
+
+https://mail.google.com/mail/u/0/#inbox
+https://mail.google.com/mail/u/0/#starred
+https://mail.google.com/mail/u/0/#drafts
+https://mail.google.com/mail/u/0/#snoozed
+
+
+https://github.com/adithnaveen
+https://github.com/adithnaveen/sapient-freshers-2020
+https://github.com/adithnaveen/springkafka-tesco01days
+https://github.com/adithnaveen/swiggy-2020-july
+
+
+https://www.python.org/about/apps/
+https://www.python.org/about/quotes/
+
+
+<a href="somepage.html"></a>
+
+
+ 
+
+
+CSR / SSR 
+
+
+
+how to scale react components 
+
+
+
+
+
+seperate class provider 
+
+
+<Provider>
+<App>
+	<Home/>
+	<Logig />
+	<Welcome /> 
+</App>
+
+</Provider>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

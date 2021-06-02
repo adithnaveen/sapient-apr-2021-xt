@@ -1,0 +1,85 @@
+sum
+min 
+max
+count
+avg 
+evenCounts 
+
+
+sleect deptid, sum(empid) 
+	from dept d , emp e, 
+	group by d.depti; 
+
+
+{
+	type:"ADD_NAME", 
+	data : name
+}
+
+{
+	type:"DELETE_NAME", 
+	date : index
+}
+	
+{
+	type:"FETCH_NAME", 
+	data : index
+}
+	
+	
+{
+	type:"FETCH_NAMES"
+}
+	
+reducer is a function 
+the store gets updated based on the return value of reducer 
+
+const reducer = (store, action) => {
+
+	switch(action.type) {
+		case "ADD_NAME" :
+			break; 
+		case "DELETE_NAME":
+			break; 
+		case "FETCH_NAME":
+			break; 
+		... 
+		default:
+			return current state; 
+	}
+}
+	
+	
+npm i bootstrap redux 
+
+	
+<ContactList /> 
+
+
+class ContactList extends Component{
+	componentDidMount() {
+		this.props.contacts;
+	}
+	render() {
+		console.log(this.props)
+		///////
+	}
+}
+const mapStateToProps =(reducder) => {
+	return {
+		contacts: reducer.contactsReducder.contacts
+	}
+}
+	
+	
+function connect(mapStateToProps, mapDispatchToProps)(ContactList);
+	
+	
+const ContactForm = () => {}
+	
+function connect(null, mapDispatchToProps)(ContactForm);
+	
+	
+function connect(mapStateToProps)(ContactList);
+	
+	
