@@ -1,0 +1,19 @@
+{
+    "idCounter": 2,
+    "contacts": [
+        {
+            "id": 1,
+            "name": "Gautam",
+            "email": "gautam@ps.com",
+            "phone": "9090909090",
+            "city": "Chennai"
+        },
+        {
+            "id": 2,
+            "name": "Priyanka",
+            "email": "priyanka@ps.com",
+            "phone": "89898989",
+            "city": "Ranchi"
+        }
+    ]
+}
