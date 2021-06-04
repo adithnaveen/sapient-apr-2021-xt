@@ -1,64 +1,98 @@
 
+
+function validateContactObject(contact) {
+    if (!contact || typeof contact !== 'object') {
+        throw new Error("Sorry please supply valid contact object");
+    }
+
+    const requiredFields = ['name', 'email', 'phone', 'city'];
+    const missingFields = [];
+
+    requiredFields.forEach(function (field) {
+        if (!(field in contact)) {
+            missingFields.push(field);
+        }
+    })
+    if (missingFields.length !== 0) {
+        throw new Error("Please supply missing fields: : ", missingFields.join())
+    }
+}
+
+function validateId(id) {
+    if (!id || typeof id !== 'number') {
+        throw new Error("Sorry please enter a valid number number")
+    }
+}
+
 class ContactService {
     constructor() {
         this.data = {
-            idCounter: 2, 
+            idCounter: 2,
             contacts: [
-                {id:1, name:"Gautam", email:"gautam@ps.com", phone:"9090909090", city:"Chennai"},
-                {id:2, name:"Priyanka", email:"priyanka@ps.com", phone:"89898989", city:"Ranchi"}
-                
+                { id: 1, name: "Gautam", email: "gautam@ps.com", phone: "9090909090", city: "Chennai" },
+                { id: 2, name: "Priyanka", email: "priyanka@ps.com", phone: "89898989", city: "Ranchi" }
+
             ]
         };
     }
 
     getContactById(id) {
-        if(!id || typeof id !== 'number') {
-            throw new Error("Sorry please enter a valid numbernumber")
-        }
-        for(let contact of this.data.contacts) {
-            if(contact.id === id) {
-                return contact; 
+        try {
+            validateId(id);
+            for (let contact of this.data.contacts) {
+                if (contact.id === id) {
+                    return contact;
+                }
             }
+
+        } catch (err) {
+            console.log(err);
         }
-        return null; 
+
+        return null;
     }
 
-    getAllContact () {
-        return [...this.data.contacts]; 
+    getAllContact() {
+        return [...this.data.contacts];
     }
 
     addContact(contact) {
-        if(!contact || typeof contact !== 'object') {
-            throw new Error("Sorry please supply valid contact object"); 
+        try {
+            validateContactObject(contact);
+            contact.id = ++this.data.idCounter;
+            this.data.contacts.push(contact);
+            return { ...contact };
+        } catch (err) {
+            console.log(err);
         }
+        return null;
+    }
 
-        const requiredFields = ['name', 'email', 'phone', 'city'];
-        const missingFields =[]; 
+    deleteContact(id) {
+        try {
+            validateId(id);
 
-        requiredFields.forEach(function(field) {
-            if(!(field in contact)) {
-                missingFields.push(field);
+            for (let contact in this.data.contacts) {
+                if (this.data.contacts[contact].id === id) {
+                    this.data.contacts.splice(contact, 1);
+                }
             }
-        })
-        if(missingFields.length!==0) {
-            throw new Error("Please supply missing fields: : " , missingFields.join())
+        } catch (err) {
+            console.log(err);
         }
-        
-        contact.id = ++ this.data.idCounter; 
-        this.data.contacts.push(contact); 
-        return {...contact}; 
-
     }
 
     // try this 
     updateContact(contact) {
-        return null; 
+        validateContactObject(contact);
+
+        this.deleteContact(contact.id);
+        this.data.contacts.push(contact);
+        return contact;
     }
 
-    deleteContact(id) {
-        return null; 
-    }
+
 
 }
 
-module.exports = ContactService; 
+module.exports = ContactService;

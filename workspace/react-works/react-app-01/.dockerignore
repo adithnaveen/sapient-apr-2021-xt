@@ -1,0 +1,6 @@
+node_modules
+Dockerfile
+build
+.eslintrc_1.json
+.vscode 
+server 

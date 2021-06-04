@@ -21,9 +21,9 @@ ReactDOM.render(<App
 // import App from './06-hoc'
 // import App from './07-multi-component';
 // import App from './08-virtual-dom';
-import App from './09-hooks';
-// import App from './10-lazy';
+// import App from './09-hooks';
+import App from './10-lazy';
 
-// ReactDOM.render(<App />, document.querySelector("#root"));
-ReactDOM.hydrate(<App />, document.querySelector("#root"));
+ReactDOM.render(<App />, document.querySelector("#root"));
+// ReactDOM.hydrate(<App />, document.querySelector("#root"));
 

@@ -1,0 +1,112 @@
+Microservice Arch 
+Docker 
+Jenkins 
+
+let someFile = current path 
+
+app.get("/", (req,res) => {
+	res.sendFile(someFile)
+})
+
+app.get("/login", (req,res) => {
+	res.sendFile(someFile)
+	req.body
+
+})
+
+http://localhost:3000/
+
+action="/login"
+
+SOLID PRINCIPLES 
+
+
+
+
+
+https://jsonplaceholder.typicode.com/todos
+
+build a service to get the https://jsonplaceholder.typicode.com/todos + put Ayush details 
+then send (Aggregate)
+
+
+
+Ayush -> Todos of Ayush -> 
+
+
+
+CRUD 
+
+CUD - COMMAND 
+R - READ 
+
+Docker is Containarization 
+
+Docker Swarm 
+Rancher 
+Kubernetes 
+	EKS 
+Fargate 
+
+- are orchestration 
+
+
+Digital Ocean 
+Heroku 
+Netlify 
+AWS 
+Azure 
+GCP 
+Pivotal - Java Spring boot 
+
+
+
+images  - passive
+container - active 
+
+> docker images 
+> docker --help
+> docker system prune 
+
+
+> docker pull mongo:4.0.24-xenial
+> docker pull mongo:latest 
+
+docker run --name sapient-mongo -d mongo 
+docker run --name sapient-mongo1 --publish 27017:27017  -d mongo 
+
+docker exec -it sapient-mongo1 sh
+
+--expose list                    
+Expose a port or a range of ports
+
+
+docker run -it --network some-network --rm mongo mongo --host some-mongo test
+
+Dockerfile 
+
+docker pull node 
+docker run --name mynode -d node 
+copy my reacct app to docker 
+npm install 
+npm start 
+
+docker build -t adithnaveen/react-app-apr-batch-21:1 .
+
+> docker build -t adithnaveen/react-app-apr-batch-21:2 .
+> docker run --name react-container-1 -p 3000:3000 -d adithnaveen/react-app-apr-batch-21:2
+
+docker run --name vikash-react -p 3001:3000 -d vikashkmr070/react-app-apr-batch-21:1
+
+> docker image push adithnaveen/react-app-apr-batch-21:2
+> docker pull adithnaveen/react-app-apr-batch-21
+
+docker pull vikashshkmr070/react-app-apr:1
+
+docker pull rkm26/react-app-rem:2
+
+
+
+
+
+
