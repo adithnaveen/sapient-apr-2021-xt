@@ -13,4 +13,5 @@
 
 
 
-![alt sample] (./sample.drawio.png)
+
+<img src="./sample.drawio.png" alt="sample image">
