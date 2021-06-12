@@ -20,4 +20,4 @@
 
 <!-- <img src="./sample.drawio.png" alt="sample image"> -->
 
-![My Diagram](sample.drawio.png)
+![My Diagram](sample1.drawio.png)
