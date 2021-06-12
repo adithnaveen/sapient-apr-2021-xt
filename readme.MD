@@ -15,3 +15,5 @@
 
 
 <img src="./sample.drawio.png" alt="sample image">
+
+![My Diagram](sample.drawio.png)
